@@ -193,6 +193,7 @@ function toggle_upload(thisValue){
   var GPM_obj = document.getElementById('upload_GPM_div');
   var Sequest_obj = document.getElementById('upload_Sequest_div');
   var MSGF_obj = document.getElementById('upload_MSGF_div');
+  var OpenMS_obj = document.getElementById('upload_OpenMS_div');
   var err_msg_obj = document.getElementById('err_msg');
   var msg_obj = document.getElementById('msg');
   err_msg_obj.innerHTML = '';
@@ -205,6 +206,7 @@ function toggle_upload(thisValue){
       GPM_obj.style.display= "none";
       Sequest_obj.style.display = "none";
       MSGF_obj.style.display = "none";
+      OpenMS_obj.style.display = "none";
     }
   }
   if(thisValue=='Mascot'){
@@ -214,6 +216,7 @@ function toggle_upload(thisValue){
       GPM_obj.style.display= "none";
       Sequest_obj.style.display = "none";
       MSGF_obj.style.display = "none";
+      OpenMS_obj.style.display = "none";
     }
   }
   if(thisValue=='GPM'){
@@ -223,6 +226,7 @@ function toggle_upload(thisValue){
       mascot_obj.style.display= "none";
       Sequest_obj.style.display = "none";
       MSGF_obj.style.display = "none";
+      OpenMS_obj.style.display = "none";
     }  
   }
   if(thisValue=='Sequest'){
@@ -232,6 +236,7 @@ function toggle_upload(thisValue){
       mascot_obj.style.display= "none";
       GPM_obj.style.display = "none";
       MSGF_obj.style.display = "none";
+      OpenMS_obj.style.display = "none";
     }  
   }
   if(thisValue=='MSGF'){
@@ -241,7 +246,18 @@ function toggle_upload(thisValue){
       mascot_obj.style.display= "none";
       GPM_obj.style.display= "none";
       Sequest_obj.style.display = "none";
+      OpenMS_obj.style.display = "none";
     }  
+  }
+  if(thisValue=='OpenMS'){
+    if(OpenMS_obj.style.display == "none"){
+        OpenMS_obj.style.display = "block";
+        MSGF_obj.style.display = "none";
+        ttp_obj.style.display = "none";
+        mascot_obj.style.display= "none";
+        GPM_obj.style.display= "none";
+        Sequest_obj.style.display = "none";
+    }
   }
 }
 function submitform(searchType){
@@ -264,6 +280,11 @@ function submitform(searchType){
     alert("Please add MSGF file!");
     return false;
   }
+
+    if(searchType=='OpenMS' && isEmptyStr(theForm.frm_OpenMS_file.value)){
+        alert("Please add OpenMS file!");
+        return false;
+    }
   
   if(searchType=='TPP' && isEmptyStr(theForm.frm_tppProt_xml.value)){
     alert("Please add protein prophet file!");
@@ -450,6 +471,11 @@ if($_SESSION['AUTH']->Insert and $theAction == 'uploaded' and !$err_msg){
        
     }
   }
+
+  /* TODO
+	if($uploadType == "OpenMS"){
+
+	}*/
 }
 
 $SQL = "SELECT SearchEngine, UploadedBy,File,Date FROM UploadSearchResults Where BandID='$passed_Band_ID' order by Date";
@@ -505,6 +531,15 @@ foreach($uploaded_arr as $uploaded_record){
       if($AccessUserID == $uploaded_record['UploadedBy']){
         $isOwner_MSGF = 1;
       }
+    }else if($searchEngine == 'OpenMS'){
+        // TODO
+	    /*$isUploaded_MSGF = 1;
+	    $file_MSGF = $uploaded_record['File'];
+	    $date_MSGF = $uploaded_record['Date'];
+	    $userID_MSGF = $uploaded_record['UploadedBy'];
+	    if($AccessUserID == $uploaded_record['UploadedBy']){
+		    $isOwner_MSGF = 1;
+	    }*/
     }
   }
 }
@@ -561,6 +596,17 @@ if($theAction == 'remove' ){
     $isUploaded_MSGF = 0;
     $isRemoved_MSGF = 1;
   }
+  // TODO
+	/*if($removeType == "OpenMS" and $isOwner_OpenMS){
+		//remove data from hits, peptide and UploadSearchResults table
+		$uploaded_txt_name = preg_replace('/xml/','txt',$file_MSGF);
+		if(_is_file($upload_to.'MSGF/'.$file_MSGF)) unlink($upload_to.'MSGF/'.$file_MSGF);
+		if(_is_file($upload_to.'MSGF/'.$uploaded_txt_name))unlink($upload_to.'MSGF/'.$uploaded_txt_name);
+		remove_hits($passed_Band_ID,$removeType,$file_MSGF);
+		$msg = "MSGF file has been removed";
+		$isUploaded_MSGF = 0;
+		$isRemoved_MSGF = 1;
+	}*/
 }
 ?>
 <script language='javascript'>
@@ -592,6 +638,9 @@ if($_SESSION['AUTH']->Insert){
  
   &nbsp;&nbsp; &nbsp;&nbsp;
   <input type=radio name='frm_file_type' value='MSGF' <?php echo ($isUploaded_MSGF)?'disabled':''?> <?php echo ($isWrongFormat_MSGF=='1')?"checked":""?> onclick="toggle_upload(this.value)" >MSGF
+
+  <input type=radio name='frm_file_type' value='OpenMS' <?php echo ($isUploaded_OpenMS)?'disabled':''?> <?php echo ($isWrongFormat_OpenMS=='1')?"checked":""?> onclick="toggle_upload(this.value)" >OpenMS
+
   <table border=0 cellspacing="2" cellpadding="0" width=93%> 
     <tr>
      <td bgcolor="white" colspan="5"><b>Remove proteins witch identifier (tag) starts with</b> 
@@ -767,7 +816,7 @@ if($_SESSION['AUTH']->Insert){
     <input type=button value='Close' onClick="window.close()";>
     <br>
   </DIV>
-  
+
   <DIV ID='upload_Sequest_div' STYLE="Display:<?php echo ($isWrongFormat_Sequest=='1')?"block":"none"?>; border: #a4a4a4 solid 1px; width: <?php echo $divSize;?>">
   <?php $BP_mode_arr = array("fldMaxBP" => "Apex",  "fldFBP" => "Full", "fldZBP" => "Zoom", "fldTIC" => "MS2");?>
     <table border=0 cellspacing="2" cellpadding="0" width=100%>
@@ -826,23 +875,51 @@ if($_SESSION['AUTH']->Insert){
     <input type="button" value='Close' onClick="window.close()";>
     <br>
   </DIV>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+  //TODO
+  <DIV ID='upload_openms_div' STYLE="Display:<?php echo ($isWrongFormat_TPP=='1')?"block":"none"?>; border: #a4a4a4 solid 1px; width: <?php echo $divSize;?>">
+      <!--<table border=1 cellspacing="2" cellpadding="0" width=100%>
+      <tr>
+          <td colspan=3 bgcolor="#ffffff"><div class=middle><b>&nbsp;&nbsp;Browse TPP Files</b></div></td>
+      </tr>
+      <tr>
+          <td bgcolor = #e3e3e3 nowrap><b><font face="Arial" size=2pt> TPP ProteinProphet :  </font></b></td>
+          <td ><input type=file size=45 name=frm_tppProt_xml></td>
+          <td nowrap><font face="Arial" size=2pt color="#0000ff" > select .xml file</font></td>
+      </tr>
+      <tr>
+          <td bgcolor = #e3e3e3 nowrap><b><font face="Arial" size=2pt> TPP PeptideProphet : </font></b></td>
+          <td ><input type=file size=45 name=frm_tppPep_xml></td>
+          <td align="left" ><font face="Arial" size=2pt color="#0000ff"> select .xml file</font></td>
+      </tr>
+      <tr>
+          <td colspan=3 ><center><div class=maintext>Upload max file size:&nbsp;<font color='red'><?php echo $UPLOAD_MAX_FILESIZE?></font>&nbsp;&nbsp;Post max size:&nbsp;<font color='red'><?php echo $POST_MAX_SIZE?></font></div></center></td>
+      </tr>
+  </table>
+  <br>
+  <input type=button value='Submit' onClick="submitform('TPP')">
+  <input type="button" value='Close' onClick="window.close()";>
+  <br>-->
+  </DIV>
+
+
+
+
+
+
+
+
+
+
+
   </form>
 <?php 
 }else{
   echo "<br><font color=#FF0000>You have no permission to upload search results</font><br>";
 }
 
-if($isUploaded_TPP or $isUploaded_Mascot or $isUploaded_GPM or $isUploaded_Sequest or $isUploaded_MSGF){
+if($isUploaded_TPP or $isUploaded_Mascot or $isUploaded_GPM or $isUploaded_Sequest or $isUploaded_MSGF or $isUploaded_OpenMS){
   echo "
   <table cellspacing=1 cellpadding=3 width=\"$divSize\">
     <tr>
@@ -940,6 +1017,24 @@ if($isUploaded_TPP or $isUploaded_Mascot or $isUploaded_GPM or $isUploaded_Seque
       </td>
     </tr>
 <?php   }
+    // TODO
+	if($isUploaded_OpenMS){
+		$theUser = $PROHITSDB->fetch("select Fname, Lname from User where ID='".$userID_OpenMS."'");
+		?>
+      <tr>
+          <td bgcolor=#e3e3e3 nowrap><div class=maintext>OpenMS</div>
+						<?php if($isOwner_OpenMS){?>
+                <div class=button><a  title='Remove uploaded file and hits' href="javascript: removehits('OpenMS')" class=button>[delete]</a></div>
+						<?php }?>
+          </td>
+          <td bgcolor=#e3e3e3 nowrap><div class=maintext><?php echo $theUser['Fname'] ." " . $theUser['Lname'];?></div></td>
+          <td bgcolor=#e3e3e3 nowrap><div class=maintext><?php echo $date_OpenMS;?></div></td>
+          <td bgcolor=#e3e3e3 nowrap><div class=maintext><?php echo $file_OpenMS;?>
+                  <a  title='Download uploaded file' href="javascript: download_uploaded_file('OpenMS/<?php echo $file_OpenMS;?>')"> <img src=./images/icon_download.gif border=0></a>
+              </div>
+          </td>
+      </tr>
+	<?php   }
 }?>
  </table>
 </center>
