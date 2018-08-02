@@ -1,0 +1,12 @@
+
+Uploading not success.
+File parsed: ../TMP/uploaded_search_results/Mascot/2_F002667.tmp
+GPM dat file ('../TMP/uploaded_search_results/GPM/2_38597_D05_12204_gpm.xml '0' '0' '100' '0'') is missing from GPM archive folder.
+There is error when parsing file (sample ID:2) 2_38597_D05_12204_gpm.xml. read log file for detail.
+File parsed: ../TMP/uploaded_search_results/GPM/2_38597_D05_12204_gpm.xml '0' '0' '100' '0'
+File parsed: /mnt/thegpm/Prohits/ProhitsStorage/Prohits_Data/uploaded_search_results/Mascot/41_F006758_jan.tmp
+File parsed: /mnt/thegpm/Prohits/ProhitsStorage/Prohits_Data/uploaded_search_results/Mascot/41_F044469.tmp
+File parsed: /mnt/thegpm/Prohits/ProhitsStorage/Prohits_Data/uploaded_search_results/Mascot/16_691_F005232.tmp
+File parsed: /mnt/thegpm/Prohits/ProhitsStorage/Prohits_Data/uploaded_search_results/GPM/43_122_A01_12762_gpm.xml '0' '0' '100' '0'
+File parsed: /mnt/thegpm/Prohits/ProhitsStorage/Prohits_Data/uploaded_search_results/Mascot/46_2.3_1_db_F001261.tmp
+File parsed: /mnt/thegpm/Prohits/ProhitsStorage/Prohits_Data/uploaded_search_results/GPM/46_122_A01_12762_gpm.xml '0' '0' '100' '0'

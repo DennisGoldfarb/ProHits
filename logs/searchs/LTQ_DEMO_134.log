@@ -1,0 +1,39 @@
+
+Machine Name:LTQ_DEMO
+Task ID: 134
+Start: 2015-08-26 16:52:55
+Convert/Check Raw files:
+File existed: 13_WASL_pelletB.mzXML
+Send to MSPLIT: 2015-08-26 16:52:55
+Run MSPLIT on remote server: xtandemserver.mshri.on.ca
+Machine Name:LTQ_DEMO
+Task ID: 134
+Start: 2015-08-27 10:35:35
+Convert/Check Raw files:
+Machine Name:LTQ_DEMO
+Task ID: 134
+Start: 2015-08-27 10:37:07
+Convert/Check Raw files:
+Warning: can not convert 12_WASL_pelletA.RAW to mzXML in /mnt/thegpm/Prohits_dev/ProhitsStorage/LTQ_DEMO/Demo_Human_GelFree_P3/
+warning: 12_WASL_pelletA.RAW file type willn't be supported by MSPLIT_DDA
+Machine Name:LTQ_DEMO
+Task ID: 134
+Start: 2015-08-27 10:42:20
+Convert/Check Raw files:
+File existed: 13_WASL_pelletB.mzXML
+Send to MSPLIT: 2015-08-27 10:42:20
+Run MSPLIT on remote server: xtandemserver.mshri.on.ca
+Machine Name:LTQ_DEMO
+Task ID: 134
+Start: 2015-08-27 10:44:13
+Convert/Check Raw files:
+File existed: 13_WASL_pelletB.mzXML
+Send to MSPLIT: 2015-08-27 10:44:13
+Run MSPLIT on remote server: xtandemserver.mshri.on.ca
+Machine Name:LTQ_DEMO
+Task ID: 134
+Start: 2015-08-27 10:45:58
+Convert/Check Raw files:
+File existed: 13_WASL_pelletB.mzXML
+Send to MSPLIT: 2015-08-27 10:45:58
+Run MSPLIT on remote server: xtandemserver.mshri.on.ca

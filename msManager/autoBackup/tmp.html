@@ -1,0 +1,81 @@
+
+
+
+<html>
+<body>
+<form name=editform method=post action=/Prohits/msManager/ms_storage_pop_edit_prohits_id.php>
+<table border=1 width=99% cellspacing="5">
+<tr>
+  <td align=center colspan=2>
+    <font face="Arial" size="+2" color="#660000"><b>LCQ Upload Files</b></font><br>
+  <hr width="100%" size="1" noshade>
+  </td>
+</tr>
+<tr>
+  <td width=30% valign=top bgcolor="#8998DB">
+    <font face="Arial" size="2" color="#ffffff"><b>STEP 1.&nbsp;&nbsp;Select a Mode</b></font>
+  </td>
+  <td>
+    <font face="Arial" size="2" color="#008000">Samples have been submited in High-throughput Analyst:<font color=black>LCQ</font><br>
+    <font color=black>Yes</font><input type="radio" name="sample_submited" value="N"  onclick="select_mode();" >&nbsp;&nbsp;
+    <font color=black>No</font><input type="radio" name="sample_submited" value="N"  onclick="select_mode();" >
+  </td>
+</tr>
+<tr>  
+  <td colspan=6>
+    <table border="1" cellpadding=0 cellspacing=0 width=100%>  			
+        <tr >
+          <td CLASS=sbottom2  HEIGHT='24' colspan='6' Align='center'>&nbsp;<br>&nbsp;
+          	<table border="1" cellpadding=0 cellspacing=0 width=90%>
+              <tr>
+          				<td colspan=6 align='left' >
+                    <font face="Arial" size="2" color="#008000">
+                      Add a upload file associated with Plate Name 
+                      <font face="Arial" color=red size=2>YDP00261</font>
+                      &nbsp;Band ID 
+                      <font face="Arial" color=red size=2>11333</font>
+                      &nbsp; and WellCode 
+                      <font face="Arial" color=red size=2>A10</font>.
+                    </font>                    
+                  </td>
+          			</tr>
+          			<tr>
+          				<td height=10 >&nbsp;</td>
+          			</tr>
+          			<tr>
+          				<td align='center' colspan=6>
+          					<INPUT TYPE="FILE" NAME="frm_File" SIZE=50>
+          				</td>
+          			</tr>
+          			<tr>
+          				<td   height=10>&nbsp;</td>
+          			</tr>
+          			<tr>
+          				<td colspan=6 align='center'><INPUT TYPE=submit VALUE='Add Upload File to List' onclick='return add_attachment()'></td>
+          			</tr>
+            </table>
+          </td>          			
+        </tr>       
+        
+        <tr>
+          <td align='center' ><br>
+        	  <table border=1 cellpadding=0 cellspacing=1 width=90% bgcolor="#ffffff">          						
+        		  <tr bgcolor='#8998DB'>
+  				   		<td align='center' ><nobr><Font size=2 face="helvetica,arial,futura" color='#ffffff'><B>File Name</B></font></td>
+                <td align='center' width=15%><nobr><Font face="helvetica,arial,futura" size=2 color='#ffffff'><B>Prohits ID</B></font></td>
+                <td align='center' width=15%><nobr><Font face="helvetica,arial,futura" size=2 color='#ffffff'><B>Well Code</B></font></td>
+                <td align='center' width=15%><nobr><Font face="helvetica,arial,futura" size=2 color='#ffffff'><B>Option</B></font></td>
+  				   	</tr>   
+            </table><br>&nbsp;
+          </td>          			
+        </tr>  
+      </table> 
+    </td>
+  </tr>
+</table>
+</form>
+</body>
+</html>
+
+
+

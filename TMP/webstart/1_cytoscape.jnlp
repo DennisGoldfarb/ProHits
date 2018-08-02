@@ -1,0 +1,47 @@
+<jnlp codebase="http://localhostCYTOSCAPE_ROOT_PATH">
+    <information>
+        <title>Cytoscape WebStart</title>
+        <vendor>Cytoscape Collaboration</vendor>
+        <homepage href="http://www.cytoscape.org/"></homepage>
+        <offline-allowed></offline-allowed>
+    </information>
+    <security>
+        <all-permissions></all-permissions>
+    </security>
+    <resources>
+        <j2se version="1.5+" max-heap-size="512M"></j2se>
+        <jar href="cytoscape.jar"></jar>
+    </resources>
+    <application-desc main-class="cytoscape.CyMain">
+	<argument>-p</argument>
+	<argument>csplugins.layout.LayoutPlugin</argument>
+	<argument>-p</argument>
+	<argument>org.mskcc.biopax_plugin.plugin.BioPaxPlugIn</argument>
+	<argument>-p</argument>
+	<argument>browser.AttributeBrowserPlugin</argument>
+	<argument>-p</argument>
+	<argument>org.cytoscape.coreplugin.cpath.plugin.CPathPlugIn</argument>
+	<argument>-p</argument>
+	<argument>cytoscape.editor.CytoscapeEditorPlugin</argument>
+	<argument>-p</argument>
+	<argument>filter.cytoscape.CsFilter</argument>
+	<argument>-p</argument>
+	<argument>GraphMerge.GraphMerge</argument>
+	<argument>-p</argument>
+	<argument>linkout.LinkOutPlugin</argument>
+	<argument>-p</argument>
+	<argument>ManualLayout.ManualLayoutPlugin</argument>
+	<argument>-p</argument>
+	<argument>org.cytoscape.coreplugin.psi_mi.plugin.PsiMiPlugIn</argument>
+	<argument>-p</argument>
+	<argument>csplugins.quickfind.plugin.QuickFindPlugIn</argument>
+	<argument>-p</argument>
+	<argument>sbmlreader.SBMLReaderPlugin</argument>
+	<argument>-p</argument>
+	<argument>edu.ucsd.bioeng.coreplugin.tableImport.TableImportPlugin</argument>
+	<argument>-p</argument>
+	<argument>yfiles.YFilesLayoutPlugin</argument>
+	<argument>--network</argument>
+<argument>http://localhost/Prohits/TMP/webstart/1_cytoscape.xgmml</argument>
+    </application-desc>
+</jnlp>

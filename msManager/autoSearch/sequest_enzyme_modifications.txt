@@ -1,0 +1,50 @@
+
+[ENZYME]
+#enzyme name, Offset,  Sites, 	No-sites
+Trypsin,                1,      KR,           -
+Trypsin_KRLNH,          1,      KRLNH,        -
+Chymotrypsin_WYFL,      1,      WYFL,         -
+Chymotrypsin,           1,      WYF,          -
+ArgC,                   1,      R,           -
+CNBr,                   1,      M,           -
+IodosoBenzoate,         1,      W,           -
+Proline_Endopept,       1,      P,           -
+GluC,                   1,      E,           -
+GluC_ED,                1,      ED,          -
+LysC,                   1,      K,           -
+AspN,                   0,      D,           -
+AspN_DE,                0,      DE,          -
+Elastase,               1,      ALIVST,      P
+Elastase_ALIVSTKR,      1,      ALIVSTKR,    P
+Trypsin/Chymo,          1,      KRLFWYN,     P
+Pronase_LFRKQ,          1,      LFRKQ,       P
+
+
+[MODIFICATIONS]
+Acetyl,  K,  42.01056
+BME-adduct,  C,  75.99829
+Carbamyl-, K, 43.00581
+Carboxyamidomethyl-, C, 57.02146
+Carboxymethyl-, C, 58.00548
+Cysteic acid, C, 47.98474
+Deamidation, NQ, 0.98402
+Desulfurization (Ala), C, -31.97207
+Dimethylation, KR, 28.03130
+Disulfide, C, -1.007825
+DTT-adduct, C, 151.99657
+Formylkyurenine, W, 31.98983
+Hydroxylation, P, 15.99490
+Kynurenine, W, 3.99491
+Methylation, CKRH, 14.01565
+N-Ethylmaleimide, C, 125.04768
+Nitrosylation, Y, 44.98507
+Oxidation(2), MWC, 31.98983
+Oxidation, MW, 15.99491
+Phosphorylation, STY, 79.96633
+Phosphorylation, ST, 79.96633
+Phosphorylation, Y, 79.96633
+Proprionamido-, C, 71.03711
+Pyroglutamate, Q, -17.02655
+Sulfation, Y, 79.95682
+Trimethylation, K, 42.04695
+Ubiquitin(GG-), K, 114.04293

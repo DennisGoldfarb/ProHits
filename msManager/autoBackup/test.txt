@@ -1,0 +1,3 @@
+</sample_enzyme>
+<search_summary base_name="225_A01_12762" search_engine="X! Tandem" precursor_mass_type="monoisotopic" fragment_mass_type="monoisotopic" search_id="1">
+<search_database local_path="/mnt/thegpm/Prohits_dev/EXT/thegpm/fasta/YEAST_RefV57_cRAPandREVgene_20130129.fasta" type="AA"/>

@@ -1,0 +1,159 @@
+<form name='MS_GFDB_para_frm' method='post' action='/Prohits/msManager/ms_search_parameter.php'>
+<input type='hidden' name='frm_multiple_select_str' value=''>
+<input type='hidden' name='frm_myaction' value='yes'>
+<input type='hidden' name=frm_Machine value=''>
+<input type='hidden' name='frm_setName' value=''>
+<input type='hidden' name='frm_set' value=''>
+<input type='hidden' name='frm_setID' value=''>
+<input type='hidden' name=frm_Description value=''>
+<input type='hidden' name='SearchEngine' value='MSGFDB'>
+<input type='hidden' name='frm_ProjectID' value='0'>
+<table border='0' cellpadding='0' cellspacing='2' width='100%'>
+  <tr>
+    <td align='right' nowrap colspan='4'>
+        <!--input type='button' value='Save' onClick='check_MS_GFDB_form(this.form)'-->
+<input type='button' value='Save' onClick='check_form(this.form)'>
+    </td>
+  </tr>
+  <tr>
+   <td colspan='4' valign='top' align='center'>
+   <TABLE width='100%' cellspacing='1' cellpadding='1'>
+   <TR>
+    <TD colspan='2' bgcolor='white'>
+      <b>Enzyme</b> 
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='#808040' width='280'><font color='#FFFFFF'><b>Enzyme(-e):</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='#e4e4e4'> 
+<select name='frm_enzyme_number'>
+<option VALUE='0'>unspecific cleavage
+<option VALUE='1' selected>Trypsin
+<option VALUE='2'>Chymotrypsin
+<option VALUE='3'>Lys_C
+<option VALUE='4'>Lys_N
+<option VALUE='5'>glutamyl endopeptidase
+<option VALUE='6'>Arg_C
+<option VALUE='7'>Asp_N
+<option VALUE='8'>alphaLP
+<option VALUE='9'>no cleavage
+</select>
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='#808040'><font color='#FFFFFF'><b>Number of allowed <br>non-enzymatic termini(-nnet):</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='#e4e4e4'>
+<SELECT name='frm_num_enzyme_termini'>
+  <OPTION VALUE='0' selected>0
+  <OPTION VALUE='1'>1
+  <OPTION VALUE='2'>2
+</SELECT> 
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='#808040'><font color='#FFFFFF'><b>Decoy(-tda):</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='#e4e4e4'> 
+<INPUT TYPE='checkbox' NAME='frm_decoy_search' VALUE='1'>
+&nbsp;&nbsp;&nbsp;&nbsp; 
+	  </TD>
+   </TR>
+   <TR>
+    <TD colspan='2' bgcolor='white'>
+      <b>Advanced options</b> 
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='#808040'><font color='#FFFFFF'><b>ParentMassTolerance(-t):</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='#e4e4e4'> &nbsp; 
+<INPUT NAME='frm_peptide_mass_tolerance_start' TYPE='TEXT' VALUE='0.6' SIZE='4'>
+to the minus&nbsp; &nbsp;
+<INPUT NAME='frm_peptide_mass_tolerance_end' TYPE='TEXT' VALUE='1.6' SIZE='4'>
+to the plus
+<SELECT name='frm_peptide_mass_units'>
+  <OPTION VALUE='1' selected>Da
+  <OPTION VALUE='2'>ppm
+</SELECT>
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='#808040'><font color='#FFFFFF'><b>Number of allowed C13(-c13):</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='#e4e4e4' nowrap> &nbsp; 
+<SELECT name='frm_c13'>
+  <OPTION VALUE='0'0
+  <OPTION VALUE='1' selected>1
+  <OPTION VALUE='2'>2
+</SELECT>
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='#808040' valign='top'><font color='#FFFFFF'><b>PepLength:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='#e4e4e4'>
+     &nbsp; 
+    (-minLength)
+<INPUT NAME='frm_minPepLength' TYPE='TEXT' VALUE='6' SIZE='3'>
+    (-maxLength)
+<INPUT NAME='frm_maxPepLength' TYPE='TEXT' VALUE='40' SIZE='3'>
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='#808040' valign='top'><font color='#FFFFFF'><b>PrecursorCharge:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='#e4e4e4'>&nbsp; 
+    (-minCharge)
+<INPUT NAME='frm_minPrecursorCharge' TYPE='TEXT' VALUE='2' SIZE='3'>
+    (-maxCharge)
+<INPUT NAME='frm_maxPrecursorCharge' TYPE='TEXT' VALUE='3' SIZE='3'>
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='#808040' valign='top'><font color='#FFFFFF'><b>NumMatchesPerSpec:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='#e4e4e4'>&nbsp; 
+<INPUT NAME='frm_numMatchesPerSpec' TYPE='TEXT' VALUE='1' SIZE='3'>
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='#808040' valign='top'><font color='#FFFFFF'><b>(-uniformAAProb):</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='#e4e4e4'>&nbsp; 
+<INPUT TYPE=checkbox NAME='frm_uniformAAProb' VALUE='1'>
+&nbsp;&nbsp;&nbsp;&nbsp; 
+	  use uniform amino acid probability
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='#808040' valign='top'><font color='#FFFFFF'><b>FragmentMethod(-m):</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='#e4e4e4'>&nbsp; 
+<SELECT name='frm_msgfdb_FragmentMethodID'>
+  <option value='0' selected>in the spectrum or CID if no info (Default)
+  <option value='1'>CID
+  <option value='2'>ETD
+  <option value='3'>HCD
+</SELECT>
+    </TD>
+   </TR>
+   <TR>
+   <TR>
+    <TD align='right' bgcolor='#808040' valign='top'><font color='#FFFFFF'><b>Instrument(-inst):</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='#e4e4e4'>&nbsp; 
+<SELECT name='frm_msgfdb_InstrumentID'>
+  <option value='0' selected>Low-res LCQ/LTQ (Default)
+  <option value='1'>Orbitrap/FTICR
+  <option value='2'>TOF
+  <option value='3'>Q-Exactive
+</SELECT>
+    </TD>
+   </TR>
+   </TABLE>
+  </td>
+ </tr>
+</table>
+</form>

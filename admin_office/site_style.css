@@ -1,0 +1,140 @@
+A.left_menu:link
+{
+        COLOR: #006090;
+        FONT-FAMILY: verdana,sans-serif;
+        FONT-SIZE: 10pt;
+        TEXT-DECORATION: none;
+        MARGIN:0 0 0pt 0pt;
+        font-weight : bold;
+}
+A.left_menu:visited
+{
+        COLOR: #006090;
+        FONT-FAMILY: verdana,sans-serif;
+        TEXT-DECORATION: none;
+        FONT-SIZE: 10pt;
+        MARGIN:0 0 0pt 0pt;
+        font-weight : bold;
+}
+A.left_menu:hover
+{
+        COLOR: black;
+        FONT-FAMILY: verdana,sans-serif;
+        FONT-SIZE: 10pt;
+        TEXT-DECORATION: none;
+		MARGIN:0 0 0pt 0pt;
+        font-weight : bold;
+}
+A.button:link
+{
+        COLOR: #000099;
+        FONT-FAMILY: verdana,sans-serif;
+        FONT-SIZE: 10pt;
+        TEXT-DECORATION: none;
+        MARGIN:0 0 0pt 0pt;
+
+}
+A.button:visited
+{
+        COLOR: #000099;
+        FONT-FAMILY: verdana,sans-serif;
+        TEXT-DECORATION: none;
+        FONT-SIZE: 10pt;
+        MARGIN:0 0 0pt 0pt;
+
+}
+A.button:hover
+{
+        COLOR: red;
+        FONT-FAMILY: verdana,sans-serif;
+        FONT-SIZE: 10pt;
+        TEXT-DECORATION: none;
+		MARGIN:0 0 0pt 0pt;
+}
+.maintext
+{
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   FONT-SIZE: 8pt;
+}
+.maintext_color
+{
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   COLOR: #5e5eff;
+   FONT-SIZE: 8pt;
+}
+.large
+{
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   FONT-SIZE: 11pt;
+}
+.excludetext
+{	
+	 COLOR: #505050;
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   FONT-SIZE: 8pt;
+}
+.platetext
+{
+   COLOR: white;
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   FONT-SIZE: 7pt;
+}
+.tableheader
+{
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   COLOR: WHITE;
+   FONT-SIZE: 8pt;
+   font-weight : bold;
+}
+.tableheader_blue
+{
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   COLOR: #5e5eff;
+   FONT-SIZE: 8pt;
+   font-weight : bold;
+}
+.green_but   
+{ background-color: #3cb371; 
+  font-family: Arial; 
+  FONT-SIZE: 8pt;
+  COLOR: WHITE;
+  font-weight : bold;
+  border-style: solid; 
+  border-color: #008080;
+}
+.blue_but   
+{ background-color: #adb6e7; 
+  font-family: Arial; 
+  FONT-SIZE: 8pt;
+  COLOR: WHITE;
+  font-weight : bold;
+  border-style: solid; 
+  border-color: #31659c;
+}
+.black_but   
+{ background-color: #9b9b9b; 
+  font-family: Arial; 
+  FONT-SIZE: 8pt;
+  COLOR: WHITE;
+  font-weight : bold;
+  border-style: solid; 
+  border-color: #000000;
+}
+INPUT.small
+{
+    FONT-SIZE: 7pt;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+
+}
+SELECT.small
+{
+    FONT-SIZE: 7pt;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+
+}
+TEXTAREA.small
+{
+    FONT-SIZE: 7pt;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+
+}

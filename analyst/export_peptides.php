@@ -1,0 +1,81 @@
+<?php 
+/***********************************************************************
+ Copyright 2010 Gingras and Tyers labs, 
+ Samuel Lunenfeld Research Institute, Mount Sinai Hospital.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+ http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*************************************************************************/
+
+require("../common/site_permission.inc.php");
+require_once("msManager/is_dir_file.inc.php");
+
+if(!$infileName){
+ exit;
+}
+
+$filename_in = $infileName;
+$outDir = "../TMP/peptides_export/";
+if(!_is_dir($outDir)) _mkdir_path($outDir);
+$filename_out = $outDir.$_SESSION['USER']->Username."_".$table."_peptides.csv";
+
+$handle_write = fopen($filename_out, "w");
+$filedNameStr = "Peptide ID,Hit ID,Score,Charge,MASS,Sequence,Status\n\n";
+
+fwrite($handle_write, $filedNameStr);
+
+$handle_read = fopen($filename_in, "r");
+if($handle_read){
+  while (!feof($handle_read)) {
+    $buffer = fgets($handle_read, 4096);
+    $tmpArr = explode(",", $buffer);
+    if(is_numeric($tmpArr[0])){
+      $SQL = "SELECT 
+         ID, 
+         HitID, 
+         Charge, 
+         MASS, 
+         Location, 
+         Expect, 
+         Sequence,
+         Status 
+         FROM Peptide 
+         where HitID='".$tmpArr[0]."' 
+         ORDER BY ID";
+      $PeptideArr2 = $mainDB->fetchAll($SQL);
+      for($i=0; $i<count($PeptideArr2); $i++){
+        $ID = str_replace(",", ";", $PeptideArr2[$i]['ID']);
+        $HitID = str_replace(",", ";", $PeptideArr2[$i]['HitID']);
+        $Expect = str_replace(",", ";", $PeptideArr2[$i]['Expect']);
+        $Charge = str_replace(",", ";", $PeptideArr2[$i]['Charge']);
+        $MASS = str_replace(",", ";", $PeptideArr2[$i]['MASS']);
+        $Sequence = str_replace(",", ";", $PeptideArr2[$i]['Sequence']);
+        $Status = str_replace(",", ";", $PeptideArr2[$i]['Status']);
+        fwrite($handle_write, $ID.",".$HitID.",".$Expect.",".$Charge.",".$MASS.",".$Sequence.",".$Status."\n");
+      }
+    }
+  }
+  fclose($handle_read);
+  fclose($handle_write);
+}
+
+if(_is_file($filename_out)){
+  header("Cache-Control: public, must-revalidate");
+  //header("Pragma: hack");
+  header("Content-Type: application/octet-stream");  //download-to-disk dialog
+  header("Content-Disposition: attachment; filename=".basename($filename_out).";" );
+  header("Content-Transfer-Encoding: binary");
+  header("Content-Length: "._filesize($filename_out));
+  readfile("$filename_out");
+  exit();
+}
+?>

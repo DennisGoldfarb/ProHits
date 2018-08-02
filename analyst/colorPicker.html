@@ -1,0 +1,18 @@
+<HTML> 
+<SCRIPT language=Javascript  src="colorPicker.js"></SCRIPT>
+<SCRIPT language=JavaScript> 
+var cp2 = new ColorPicker(); // DIV style
+cp2.writeDiv();
+function get_color_num(){
+	var colorNum = 'C_' + document.forms[0].color2.value.substring(1);
+	alert(colorNum);
+}
+</SCRIPT>
+
+<!--BODY vLink=#00615f aLink=#00615f link=#00615f bgColor=#ffffff-->
+<FORM>
+     <INPUT  name=color2 onafterupdate="get_color_num();";> 
+	   <A id=pick2  onclick="cp2.select(document.forms[0].color2,'pick2');return false;"  href="#"  name=pick2>Pick</A>
+</FORM> 
+
+ <!--/BODY--></HTML>

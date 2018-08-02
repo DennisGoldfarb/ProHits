@@ -1,0 +1,189 @@
+TD {
+  font-family : Arial, Helvetica, sans-serif;
+  FONT-SIZE: 7pt;
+}
+A.button:link
+{
+        COLOR: #000099;
+        FONT-FAMILY: verdana,sans-serif;
+        FONT-SIZE: 10pt;
+        TEXT-DECORATION: none;
+        MARGIN:0 0 0pt 0pt;
+
+}
+A.button:visited
+{
+        COLOR: #000099;
+        FONT-FAMILY: verdana,sans-serif;
+        TEXT-DECORATION: none;
+        FONT-SIZE: 10pt;
+        MARGIN:0 0 0pt 0pt;
+
+}
+A.button:hover
+{
+        COLOR: #860223;
+        FONT-FAMILY: verdana,sans-serif;
+        FONT-SIZE: 10pt;
+        TEXT-DECORATION: none;
+    MARGIN:0 0 0pt 0pt;
+}
+PRE{
+	FONT-SIZE: 10px; FONT-FAMILY: helvetica, arial, geneva, sans-serif
+}
+TH {
+	FONT-SIZE: 10px; FONT-FAMILY: verdana
+}
+COL:hover {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #ffccff
+}
+TR.row:hover {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #ffccff
+}
+TR.over TD {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid; BACKGROUND-COLOR: #ffccff
+}
+TD.s0 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; WIDTH: 10px; BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 10px; BACKGROUND-COLOR: #dfdfdf
+}
+TD.s1 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; WIDTH: 10px; BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 10px; BACKGROUND-COLOR: #33ccff
+}
+TD.s2 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; WIDTH: 10px; BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 10px; BACKGROUND-COLOR: #3399ff
+}
+TD.s3 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; WIDTH: 10px; BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 10px; BACKGROUND-COLOR: #3366ff
+}
+TD.s4 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; WIDTH: 10px; BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 10px; BACKGROUND-COLOR: #3333ff
+}
+TD.s5 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; WIDTH: 10px; BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 10px; BACKGROUND-COLOR: #3300ff
+}
+TD.s6 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; WIDTH: 10px; BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 10px; BACKGROUND-COLOR: #0000cc
+}
+TD.s10 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; WIDTH: 10px; BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 10px; BACKGROUND-COLOR: blue
+}
+TD.s11 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; WIDTH: 10px; BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 10px; BACKGROUND-COLOR: green
+}
+TD.s12 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; BORDER-LEFT: #ffffff 1px solid; WIDTH: 10px; BORDER-BOTTOM: #ffffff 1px solid; HEIGHT: 10px; BACKGROUND-COLOR: yellow
+}
+TD.s13 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; WIDTH: 200px; HEIGHT: 5px; COLOR: #c1c1c1
+}
+TD.s13_1 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; WIDTH: 200px; HEIGHT: 5px; COLOR: #df0070
+}
+TD.s13_2 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; WIDTH: 200px; HEIGHT: 5px; COLOR: #df0070; FONT-WEIGHT: bold
+}
+TD.s13_3 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; WIDTH: 200px; HEIGHT: 5px; COLOR: black; FONT-WEIGHT: bold
+}
+TD.s14 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; WIDTH: 200px; HEIGHT: 5px; COLOR: black
+}
+TD.s14_1 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; WIDTH: 200px; HEIGHT: 5px; COLOR: #ff9c6c
+}
+TD.s14_2 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; WIDTH: 200px; HEIGHT: 5px; COLOR: #eaea00
+}
+TD.s15 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; WIDTH: 200px; HEIGHT: 5px; white-space: nowrap
+}
+TD.s16 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; WIDTH: 200px; HEIGHT: 5px; BACKGROUND-COLOR: #d6d6d6; white-space: nowrap
+
+}
+TD.s15_1 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; HEIGHT: 5px;; BACKGROUND-COLOR: #CCFFCC; white-space: nowrap
+
+}
+TD.s15_2 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; HEIGHT: 5px; white-space: nowrap
+}
+TD.s17 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; WIDTH: 200px; HEIGHT: 5px
+}
+TD.s18 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; WIDTH: 200px; HEIGHT: 5px; BACKGROUND-COLOR: #dfdfdf; font-family : Arial, Helvetica, sans-serif;
+  FONT-SIZE: 5pt; 
+}
+TD.s19 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; WIDTH: 100px; HEIGHT: 5px; BACKGROUND-COLOR: #aeaeae 
+}
+TD.s20 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; WIDTH: 200px; HEIGHT: 10px
+}
+TD.s21 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; HEIGHT: 40px; 
+}
+TD.s22 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; HEIGHT: 5px;  
+}
+.textinput {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; FONT-SIZE: 9px; VERTICAL-ALIGN: middle; BORDER-LEFT: #666666 1px solid; COLOR: #666666; BORDER-BOTTOM: #666666 1px solid; FONT-FAMILY: verdana; BACKGROUND-COLOR: #dfdfdf
+}
+.checkbox {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; FONT-SIZE: 9px; VERTICAL-ALIGN: middle; BORDER-LEFT: 0px; COLOR: #666666; BORDER-BOTTOM: 0px; FONT-FAMILY: verdana; BACKGROUND-COLOR: #dfdfdf
+}
+.codebuttons {
+	BORDER-RIGHT: #bbbbbb 1px solid; BORDER-TOP: #bbbbbb 1px solid; FONT-SIZE: 9px; VERTICAL-ALIGN: middle; BORDER-LEFT: #bbbbbb 1px solid; COLOR: #666666; BORDER-BOTTOM: #bbbbbb 1px solid; FONT-FAMILY: verdana; BACKGROUND-COLOR: #dfdfdf
+}
+A {
+	TEXT-DECORATION: none
+}
+.leftalign {
+	PADDING-RIGHT: 5pt; PADDING-LEFT: 5pt; TEXT-ALIGN: left
+}
+.initial2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 9px; BACKGROUND-COLOR: lime
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px
+}
+H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px
+}
+A.menulink {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; DISPLAY: block; FONT-SIZE: 12px; BORDER-LEFT: #ffffff 1px solid; WIDTH: 198px; COLOR: #000000; BORDER-BOTTOM: #ffffff 1px solid; FONT-FAMILY: arial; TEXT-ALIGN: left; TEXT-DECORATION: none
+}
+A.menulink2 {
+	BORDER-RIGHT: #ffffff 1px solid; BORDER-TOP: #ffffff 1px solid; DISPLAY: block; FONT-SIZE: 12px; BORDER-LEFT: #ffffff 1px solid; WIDTH: 148px; COLOR: #000000; BORDER-BOTTOM: #ffffff 1px solid; FONT-FAMILY: arial; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+A.menulink2:hover {
+	BORDER-RIGHT: #6100c1 1px solid; BORDER-TOP: #6100c1 1px solid; BORDER-LEFT: #6100c1 1px solid; BORDER-BOTTOM: #6100c1 1px solid; BACKGROUND-COLOR: #f0e1ff
+}
+A.menulink:hover {
+	BORDER-RIGHT: #6100c1 1px solid; BORDER-TOP: #6100c1 1px solid; BORDER-LEFT: #6100c1 1px solid; BORDER-BOTTOM: #6100c1 1px solid; BACKGROUND-COLOR: #f0e1ff
+}
+UNKNOWN {
+	BORDER-RIGHT: #000 1px dashed; BORDER-TOP: #000 1px dashed; FONT-WEIGHT: bold; FONT-SIZE: 48px; BACKGROUND: #ff0; FLOAT: left; MARGIN: 5px; BORDER-LEFT: #000 1px dashed; WIDTH: 50px; COLOR: #000; BORDER-BOTTOM: #000 1px dashed; FONT-FAMILY: Arial; TEXT-ALIGN: center
+}
+.text {
+	FONT-SIZE: 9px; FLOAT: left; MARGIN: 5px; WIDTH: 150px; COLOR: #000; FONT-FAMILY: Arial
+}
+DIV#tipDiv {
+	BORDER-RIGHT: #336 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #336 1px solid; PADDING-LEFT: 6px; FONT-SIZE: 11px; Z-INDEX: 10000; LEFT: 0px; VISIBILITY: hidden; PADDING-BOTTOM: 6px; BORDER-LEFT: #336 1px solid; WIDTH: 160px; COLOR: #000; LINE-HEIGHT: 1.3; PADDING-TOP: 6px; BORDER-BOTTOM: #336 1px solid; POSITION: absolute; TOP: 0px; BACKGROUND-COLOR: #dee7f7
+}
+DIV#tipDiv A:link {
+	COLOR: #33b
+}
+DIV#tipDiv A:visited {
+	COLOR: #339
+}
+DIV#tipDiv DIV.img {
+	TEXT-ALIGN: center
+}
+DIV#tipDiv DIV.txt {
+	MARGIN-TOP: 4px; TEXT-ALIGN: center
+}

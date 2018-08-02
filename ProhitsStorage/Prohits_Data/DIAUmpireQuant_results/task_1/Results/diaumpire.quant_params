@@ -1,0 +1,33 @@
+#DIA-Umpire (version: v1.4273)
+path = /var/www/html/Prohits/EXT/thegpm/gpm/archive/LTQ_DEMO/DIAUmpire_Quant_Tasks/task1/
+==File list begin
+/var/www/html/Prohits/EXT/thegpm/gpm/archive/LTQ_DEMO/45_Swath_EIF4aJune7-Biorep2/45_Swath_EIF4aJune7-Biorep2.mzXML
+/var/www/html/Prohits/EXT/thegpm/gpm/archive/LTQ_DEMO/46_Swath_MEPCEJune7-Biorep3/46_Swath_MEPCEJune7-Biorep3.mzXML
+==File list end
+Thread = 16
+TargetedExtraction = true
+Fasta = /var/www/html/Prohits/EXT/thegpm/fasta/HUMAN_RefV57_cRAPandREVgene_20130130.fasta
+Combined_Prot=/var/www/html/Prohits/EXT/thegpm/gpm/archive/LTQ_DEMO/DIAUmpire_Quant_Tasks/task1/combined.pep.inter.prot.xml
+DecoyPrefix=DECOY
+PeptideFDR = 0.05
+ProteinFDR = 0.05
+UserMod = 
+####Peptide-centric targeted re-extraction####
+InternalLibID = LibID
+ProbThreshold = 0.9
+####Peptide filtering####
+FilterWeight = GW
+MinWeight = 0.9
+####Peptide/Fragment selection####
+TopNFrag = 20
+TopNPep = 20
+Freq = 0
+####Export SAINT input files####
+ExportSaintInput = true
+#Quantitation type (MS1, MS2, or BOTH)
+QuantitationType = BOTH
+#Assign file basename of baits/control samples, tab-delimited for multiple replicates
+BaitName_1 = MEPCE
+BaitFile_1 = 46_Swath_MEPCEJune7-Biorep3
+ControlName_1 = 45_EIF4A2
+ControlFile_1 = 45_Swath_EIF4aJune7-Biorep2

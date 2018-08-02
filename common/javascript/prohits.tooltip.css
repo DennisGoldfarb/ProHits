@@ -1,0 +1,22 @@
+/* global */
+/*tootip classes*/
+.ui-tooltip {
+  color: black;
+  background: #ffffcc;  
+  padding: 0px;
+	position: absolute;
+	max-width: 300px;
+  border-radius: 2px;
+}
+#tooltip-title {
+  margin: 0 0 2px;
+  padding: 4px 4px 2px;
+  font-size: 0.9em;
+  font-weight: normal;
+  background-color: #87876a;
+  color: #fff;
+}
+#tooltip-body {
+  padding: 4px;
+	font-size: 0.9em;
+}

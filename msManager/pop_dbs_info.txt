@@ -1,0 +1,64 @@
+
+
+
+
+##01--HUMAN_RefV57 (for MSPLIT)
+[Homo sapiens]
+Number of residues          :	20024437
+Number of sequences         :	36360
+Human adenovirus C(RefseqV57)txid:129951(146 proteins)
+http://maxquant.org/contaminants.zip for contaminants from MPI
+file:HUMAN_RefV57_rev_20130130.fasta
+ftp://ftp.thegpm.org/fasta/cRAP/crap.fasta for cRAP from GPM
+Reverse sequence >DECOY###
+
+##02--HUMAN_RefV57_rev 
+
+[Homo sapiens]   
+Time files compressed       :	Wed Feb 18 10:50:51 2015
+Number of residues          :	39922660
+Number of sequences         :	72481
+Human adenovirus C(RefseqV57)txid:129951(146 proteins)
+http://maxquant.org/contaminants.zip for contaminants from MPI
+file:HUMAN_RefV57_20130130.fasta
+ftp://ftp.thegpm.org/fasta/cRAP/crap.fasta for cRAP from GPM
+Reverse sequence >DECOY###
+
+
+##03--Mouse_RefV53 (for MSPLIT)
+
+[Mus musculus]
+Number of sequences         :	29286
+http://maxquant.org/contaminants.zip for contaminants from MPI
+file: Mouse_RefV53_20120528.fasta
+ftp://ftp.thegpm.org/fasta/cRAP/crap.fasta for cRAP from GPM
+ 
+##04--Mouse_RefV53_rev
+
+[Mus musculus]
+Number of residues          :	31305084
+Number of sequences         :	58202
+http://maxquant.org/contaminants.zip for contaminants from MPI
+file: Mouse_RefV53_rev_20120528.fasta
+ftp://ftp.thegpm.org/fasta/cRAP/crap.fasta for cRAP from GPM
+Reverse sequence >DECOY###
+ 
+##05--YEAST_RefV57 (for MSPLIT)
+
+[Saccharomyces cerevisiae S288c]
+Number of sequences         :	6022
+Downloaded from NCBI:(RefseqV57)
+txid559292[Organism:noexp]
+file: YEAST_RefV57_20130129.fasta
+ftp://ftp.thegpm.org/fasta/cRAP/crap.fasta for cRAP from GPM
+
+##06--YEAST_RefV57_rev
+
+[Saccharomyces cerevisiae S288c]
+Number of residues          :	5911456
+Number of sequences         :	12044
+Downloaded from NCBI:(RefseqV57)
+txid559292[Organism:noexp]
+file: YEAST_RefV57_rev_20130129.fasta
+ftp://ftp.thegpm.org/fasta/cRAP/crap.fasta for cRAP from GPM
+Reverse sequence >DECOY###

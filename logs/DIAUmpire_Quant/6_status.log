@@ -1,0 +1,12 @@
+
+1. Check mzXML in task folder
+Swath_MEPCEJune7-Biorep3.mzXML.gz wget --post-data="SID=rawDataConverter&tableName=LTQ_DEMO&ID=46&clicked=yes&filePath=/mnt/prohitsTest/Prohits_Storage/LTQ_DEMO/Human_P3/Swath_MEPCEJune7-Biorep3.mzXML.gz" --directory-prefix="/mnt/thegpm/gpm/archive/LTQ_DEMO/46_Swath_MEPCEJune7-Biorep3" --output-document="/mnt/thegpm/gpm/archive/LTQ_DEMO/46_Swath_MEPCEJune7-Biorep3/46_Swath_MEPCEJune7-Biorep3.mzXML.gz" http://10.197.160.102:80/Prohits/msManager/autoBackup/download_raw_file.php
+/mnt/thegpm/gpm/archive/LTQ_DEMO/46_Swath_MEPCEJune7-Biorep3/46_Swath_MEPCEJune7-Biorep3.mzXML
+File uploaded
+Swath_EIF4aJune7-Biorep2.mzXML.gz wget --post-data="SID=rawDataConverter&tableName=LTQ_DEMO&ID=45&clicked=yes&filePath=/mnt/prohitsTest/Prohits_Storage/LTQ_DEMO/Human_P3/Swath_EIF4aJune7-Biorep2.mzXML.gz" --directory-prefix="/mnt/thegpm/gpm/archive/LTQ_DEMO/45_Swath_EIF4aJune7-Biorep2" --output-document="/mnt/thegpm/gpm/archive/LTQ_DEMO/45_Swath_EIF4aJune7-Biorep2/45_Swath_EIF4aJune7-Biorep2.mzXML.gz" http://10.197.160.102:80/Prohits/msManager/autoBackup/download_raw_file.php
+/mnt/thegpm/gpm/archive/LTQ_DEMO/45_Swath_EIF4aJune7-Biorep2/45_Swath_EIF4aJune7-Biorep2.mzXML
+File uploaded
+2. Get selected search results file locations.
+3. Submit reuqest form to DIA-Umpire server
+4. Return from DIA-Umpire server.
+DIA-Umpire Quant ID: 6. ProcessID:19142.xtandemserver.mshri.on.ca umpireQuant6

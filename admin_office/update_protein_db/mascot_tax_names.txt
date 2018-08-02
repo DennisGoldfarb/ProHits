@@ -1,0 +1,66 @@
+<SELECT NAME="TAXONOMY">
+      <OPTION SELECTED>All entries</OPTION>
+      <OPTION>. . Archaea (Archaeobacteria)</OPTION>
+      <OPTION>. . Eukaryota (eucaryotes)</OPTION>
+      <OPTION>. . . . Alveolata (alveolates)</OPTION>
+      <OPTION>. . . . . . Plasmodium falciparum (malaria parasite)</OPTION>
+      <OPTION>. . . . . . Other Alveolata</OPTION>
+      <OPTION>. . . . Metazoa (Animals)</OPTION>
+      <OPTION>. . . . . . Caenorhabditis elegans</OPTION>
+      <OPTION>. . . . . . Drosophila (fruit flies)</OPTION>
+      <OPTION>. . . . . . Chordata (vertebrates and relatives)</OPTION>
+      <OPTION>. . . . . . . . bony vertebrates</OPTION>
+      <OPTION>. . . . . . . . . . lobe-finned fish and tetrapod clade</OPTION>
+      <OPTION>. . . . . . . . . . . . Mammalia (mammals)</OPTION>
+      <OPTION>. . . . . . . . . . . . . . Primates</OPTION>
+      <OPTION>. . . . . . . . . . . . . . . . Homo sapiens (human)</OPTION>
+      <OPTION>. . . . . . . . . . . . . . . . Other primates</OPTION>
+      <OPTION>. . . . . . . . . . . . . . Rodentia (Rodents)</OPTION>
+      <OPTION>. . . . . . . . . . . . . . . . Mus.</OPTION>
+      <OPTION>. . . . . . . . . . . . . . . . . . Mus musculus (house mouse)</OPTION>
+      <OPTION>. . . . . . . . . . . . . . . . Rattus</OPTION>
+      <OPTION>. . . . . . . . . . . . . . . . Other rodentia</OPTION>
+      <OPTION>. . . . . . . . . . . . . . Other mammalia</OPTION>
+      <OPTION>. . . . . . . . . . . . Xenopus laevis (African clawed frog)</OPTION>
+      <OPTION>. . . . . . . . . . . . Other lobe-finned fish and tetrapod clade</OPTION>
+      <OPTION>. . . . . . . . . . Actinopterygii (ray-finned fishes)</OPTION>
+      <OPTION>. . . . . . . . . . . . Takifugu rubripes (Japanese Pufferfish)</OPTION>
+      <OPTION>. . . . . . . . . . . . Danio rerio (zebra fish)</OPTION>
+      <OPTION>. . . . . . . . . . . . Other Actinopterygii</OPTION>
+      <OPTION>. . . . . . . . Other Chordata</OPTION>
+      <OPTION>. . . . . . Other Metazoa</OPTION>
+      <OPTION>. . . . Dictyostelium discoideum</OPTION>
+      <OPTION>. . . . Fungi</OPTION>
+      <OPTION>. . . . . . Saccharomyces Cerevisiae (baker's yeast)</OPTION>
+      <OPTION>. . . . . . Schizosaccharomyces pombe (fission yeast)</OPTION>
+      <OPTION>. . . . . . Pneumocystis carinii</OPTION>
+      <OPTION>. . . . . . Other Fungi</OPTION>
+      <OPTION>. . . . Viridiplantae (Green Plants)</OPTION>
+      <OPTION>. . . . . . Arabidopsis thaliana (thale cress)</OPTION>
+      <OPTION>. . . . . . Oryza sativa (rice)</OPTION>
+      <OPTION>. . . . . . Other green plants</OPTION>
+      <OPTION>. . . . Other Eukaryota</OPTION>
+      <OPTION>. . Bacteria (Eubacteria)</OPTION>
+      <OPTION>. . . . Actinobacteria (class)</OPTION>
+      <OPTION>. . . . . . Mycobacterium tuberculosis complex</OPTION>
+      <OPTION>. . . . . . Other Actinobacteria (class)</OPTION>
+      <OPTION>. . . . Firmicutes (gram-positive bacteria)</OPTION>
+      <OPTION>. . . . . . Bacillus subtilis</OPTION>
+      <OPTION>. . . . . . Mycoplasma</OPTION>
+      <OPTION>. . . . . . Streptococcus Pneumoniae</OPTION>
+      <OPTION>. . . . . . Streptomyces coelicolor</OPTION>
+      <OPTION>. . . . . . Other Firmicutes</OPTION>
+      <OPTION>. . . . Proteobacteria (purple bacteria)</OPTION>
+      <OPTION>. . . . . . Agrobacterium tumefaciens</OPTION>
+      <OPTION>. . . . . . Campylobacter jejuni</OPTION>
+      <OPTION>. . . . . . Escherichia coli</OPTION>
+      <OPTION>. . . . . . Salmonella</OPTION>
+      <OPTION>. . . . . . Other Proteobacteria</OPTION>
+      <OPTION>. . . . Other Bacteria</OPTION>
+      <OPTION>. . Viruses</OPTION>
+      <OPTION>. . . . Hepatitis C virus</OPTION>
+      <OPTION>. . . . Other viruses</OPTION>
+      <OPTION>. . Other (includes plasmids and artificial sequences)</OPTION>
+      <OPTION>. . unclassified</OPTION>
+      <OPTION>. . Species information unavailable</OPTION>
+      </SELECT></TD>

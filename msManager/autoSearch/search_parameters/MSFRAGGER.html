@@ -1,0 +1,203 @@
+<form name='MSFRAGGER_para_frm' method='post' action='/Prohits/msManager/ms_search_parameter.php'>
+<input type='hidden' name='frm_multiple_select_str' value=''>
+<input type='hidden' name='frm_myaction' value='yes'>
+<input type='hidden' name=frm_Machine value=''>
+<input type='hidden' name='frm_setName' value=''>
+<input type='hidden' name='frm_set' value=''>
+<input type='hidden' name='frm_setID' value=''>
+<input type='hidden' name=frm_Description value=''>
+<input type='hidden' name='SearchEngine' value='MSFRAGGER'>
+<input type='hidden' name='frm_ProjectID' value='0'>
+
+<table border='0' cellpadding='0' cellspacing='2' width='100%'>
+  <tr>
+    <td align='right' nowrap colspan='4'>    
+       <!--input type='button' value='Save' onClick='check_FRAGGER_form(this.form)'-->
+<input type='button' value='Save' onClick='check_form(this.form)'>
+    </td>
+  </tr>
+  <tr>
+    <td colspan='2' valign='top'>
+   <TABLE width='100%' cellspacing='1' cellpadding='1' border='0'>
+     <TR>
+      <TD colspan='2' bgcolor='white'>
+      <b>Enzyme</b> 
+      </TD>
+     </TR>
+     <TR>
+      <TD align='right' bgcolor='@#@td_label_color@#@' width='280'><font color='#FFFFFF'><b>Enzyme:</b></font>&nbsp; &nbsp; 
+      </TD>
+      <TD bgcolor='@#@td_base_color@#@'>
+<SELECT name='frm_search_enzyme_name_str'>
+<OPTION VALUE='::'>No_enzyme
+<OPTION VALUE='Trypsin:KR:P' selected>Trypsin
+<OPTION VALUE='Trypsin:KR:'>Trypsin/P
+<OPTION VALUE='Lys_C:K:P'>Lys_C
+<OPTION VALUE='Lys_NK:'>Lys_N
+<OPTION VALUE='Arg_C:R:P'>Arg_C
+<OPTION VALUE='Asp_N:D:'>Asp_N
+<OPTION VALUE='CNBr:M:'>CNBr
+<OPTION VALUE='Glu_C:DE:P'>Glu_C
+<OPTION VALUE='PepsinA:FL:P'>PepsinA
+<OPTION VALUE='Chymotrypsin:FWYL:P'>Chymotrypsin
+</SELECT>
+      </TD>
+     </TR>
+   <TR>
+    <TD align='right' bgcolor='@#@td_label_color@#@'><font color='#FFFFFF'><b>Allowed missed cleavage:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='@#@td_base_color@#@'>
+<SELECT name='frm_allowed_missed_cleavage'>
+<OPTION VALUE='0'>0
+<OPTION VALUE='1' selected>1
+<OPTION VALUE='2'>2
+<OPTION VALUE='3'>3
+<OPTION VALUE='4'>4
+<OPTION VALUE='5'>5
+</SELECT>
+&nbsp; &nbsp; &nbsp; <b>Num enzyme termini</b>
+<SELECT name='frm_num_enzyme_termini'>
+<OPTION VALUE='0'>nonspecific digestion
+<OPTION VALUE='1'>semi-enzymatic
+<OPTION VALUE='2' selected>enzymatic
+</SELECT>
+    </TD>
+   </TR>
+   <TR>
+    <TD colspan='2' bgcolor='white'>
+      <b>Advanced options</b> 
+    </TD>
+   </TR>
+   <TR>
+    <TD align=right bgcolor=@#@td_label_color@#@><font color='#FFFFFF'><b>Precursor mass tolerance:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor=@#@td_base_color@#@> &nbsp;
+<INPUT name='frm_precursor_mass_tolerance' type='TEXT' value='500' size='6'>
+&nbsp;
+<SELECT name='frm_precursor_mass_units'>
+<OPTION VALUE='0' selected>Da
+<OPTION VALUE='1'>ppm
+</SELECT>
+    </TD>
+   </TR>
+   <TR>
+    <TD align=right bgcolor=@#@td_label_color@#@><font color='#FFFFFF'><b>Precursor true tolerance:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor=@#@td_base_color@#@> &nbsp;
+<INPUT name='frm_precursor_true_tolerance' type='TEXT' value='20' size='6'>
+&nbsp;
+<SELECT name='frm_precursor_true_units'>
+<OPTION VALUE='0'>Da
+<OPTION VALUE='1' selected>ppm
+</SELECT>
+    </TD>
+   </TR>
+   
+   <TR>
+    <TD align=right bgcolor=@#@td_label_color@#@><font color='#FFFFFF'><b>Fragment mass tolerance:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor=@#@td_base_color@#@> &nbsp;
+<INPUT name='frm_fragment_mass_tolerance' type='TEXT' value='20' size='6'>
+&nbsp;
+<SELECT name='frm_fragment_mass_units'>
+<OPTION VALUE='0'>Da
+<OPTION VALUE='1' selected>ppm
+</SELECT>
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='@#@td_label_color@#@'><font color='#FFFFFF'><b>Isotope error:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='@#@td_base_color@#@'> &nbsp;
+<SELECT name='frm_isotope_error'>
+<OPTION VALUE='0' selected>0
+<OPTION VALUE='1'>1
+<OPTION VALUE='2'>2
+</SELECT>
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='@#@td_label_color@#@'><font color='#FFFFFF'><b> Clip nTerm M:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='@#@td_base_color@#@'> &nbsp;
+<INPUT name='frm_clip_nTerm_M' type='TEXT' value='1' size='2'>
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='@#@td_label_color@#@' valign='top'><font color='#FFFFFF'><b>Precursor charge:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='@#@td_base_color@#@'> &nbsp; 
+<SELECT name='frm_precursor_charge'>
+<OPTION VALUE='1 3' selected>1+, 2+ and 3+
+<OPTION VALUE='2 3'>2+ and 3+
+<OPTION VALUE='2 4'>2+, 3+ and 4+
+<OPTION VALUE='1 4'>1+, 2+, 3+ and 4+
+</SELECT>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Override charge:</b>&nbsp;&nbsp;
+<SELECT name='frm_override_charge'>
+<OPTION VALUE='0' selected>no
+<OPTION VALUE='1'>yes
+</SELECT> 
+    </TD>
+   </TR>
+  <TR>
+    <TD align='right' valign='top' rowspan='4' bgcolor='@#@td_label_color@#@'><font color='#FFFFFF'><b> Open search parameters:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='@#@td_base_color@#@'> &nbsp;<b> Track zero topN:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT name='frm_track_zero_topN' type='TEXT' value='0' size='5'>    
+    </TD>
+  </TR>
+  <TR>
+    <TD bgcolor='@#@td_base_color@#@'> &nbsp;<b> Zero bin accept expect:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT name='frm_zero_bin_accept_expect' type='TEXT' value='0' size='5'>    
+    </TD>
+  </TR>
+  <TR>
+    <TD bgcolor='@#@td_base_color@#@'> &nbsp;<b> Zero bin mult_expect:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT name='frm_zero_bin_mult_expect' type='TEXT' value='1' size='5'>    
+    </TD>
+  </TR>    
+  <TR>
+    <TD bgcolor='@#@td_base_color@#@'> &nbsp;<b> Add topN complementary:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT name='frm_add_topN_complementary' type='TEXT' value='0' size='5'>  
+    </TD>
+  </TR>
+  <TR>
+    <TD align='right' valign='top' rowspan='6' bgcolor='@#@td_label_color@#@'><font color='#FFFFFF'><b> Spectral processing:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='@#@td_base_color@#@'> &nbsp;<b> Minimum peaks:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT name='frm_minimum_peaks' type='TEXT' value='15' size='5'>   
+    </TD>
+  </TR>
+  <TR>
+    <TD bgcolor='@#@td_base_color@#@'> &nbsp;<b> Use topN peaks:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT name='frm_use_topN_peaks' type='TEXT' value='100' size='5'>    
+    </TD>
+  </TR>
+  <TR>
+    <TD bgcolor='@#@td_base_color@#@'> &nbsp;<b> Min fragments modelling:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT name='frm_min_fragments_modelling' type='TEXT' value='3' size='5'>    
+    </TD>
+  </TR>    
+  <TR>
+    <TD bgcolor='@#@td_base_color@#@'> &nbsp;<b> Min matched fragments:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT name='frm_min_matched_fragments' type='TEXT' value='6' size='5'> 
+    </TD>
+  </TR> 
+  
+  <TR>
+    <TD bgcolor='@#@td_base_color@#@'> &nbsp;<b> Minimum ratio:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT name='frm_minimum_ratio' type='TEXT' value='0.01' size='5'>    
+    </TD>
+  </TR>    
+  <TR>
+    <TD bgcolor='@#@td_base_color@#@'> &nbsp;<b> Clear mz range:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT name='frm_clear_mz_range__from' type='TEXT' value='0.0' size='5'>
+<INPUT name='frm_clear_mz_range__to' type='TEXT' value='0.0' size='5'>
+    </TD>
+  </TR>
+  </TABLE>
+  </td>
+ </tr>
+</table>
+</form>

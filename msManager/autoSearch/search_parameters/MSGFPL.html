@@ -1,0 +1,142 @@
+<form name='MSGFPL_para_frm' method=post action='/Prohits/msManager/ms_search_parameter.php'>
+<input type='hidden' name='frm_multiple_select_str' value=''>
+<input type='hidden' name='frm_myaction' value='yes'>
+<input type='hidden' name=frm_Machine value=''>
+<input type='hidden' name='frm_setName' value=''>
+<input type='hidden' name='frm_set' value=''>
+<input type='hidden' name='frm_setID' value=''>
+<input type='hidden' name=frm_Description value=''>
+<input type='hidden' name='SearchEngine' value='MSGFPL'>
+<input type='hidden' name='frm_ProjectID' value='0'>
+<table border='0' cellpadding='0' cellspacing='2' width='100%'>
+  <tr>
+    <td align='right' nowrap colspan='4'>
+<!--input type='button' value='Save' onClick='check_MSGFPL_form(this.form)'-->
+<input type='button' value='Save' onClick='check_form(this.form)'>
+    </td>
+  </tr>
+  <tr>
+  <td colspan='4' valign='top'>
+   <TABLE width='100%' cellspacing='1' cellpadding='1'>
+   <TR>
+    <TD colspan='4' bgcolor='white'>
+      <b>Enzyme</b> 
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='#8e98b3' width='280'><font color='#FFFFFF'><b>Enzyme:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='#e4e4e4'> 
+<select name='frm_enzyme_number'>
+<option value='0'>unspecific cleavage
+<option value='1' selected>Trypsin
+<option value='2'>Chymotrypsin
+<option value='3'>Lys_C
+<option value='4'>Lys_N
+<option value='5'>glutamyl endopeptidase
+<option value='6'>Arg_C
+<option value='7'>Asp_N
+<option value='8'>alphaLP
+<option value='9'>no cleavage
+</select>
+    </TD>
+    </TR>
+    <TR>
+    <TD align='right' bgcolor='#8e98b3'><font color='#FFFFFF'><b>Semi-style cleavage(-ntt):</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='#e4e4e4'>
+<INPUT TYPE='checkbox' NAME='frm_num_enzyme_termini' VALUE='1'>
+&nbsp;&nbsp;&nbsp;&nbsp;
+    </TD>
+    </TR>
+    <TR>
+    <TD align='right' bgcolor='#8e98b3'><font color='#FFFFFF'><b>Decoy(-tda):</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='#e4e4e4'> 
+<INPUT TYPE='checkbox' NAME='frm_decoy_search' VALUE='1'>
+&nbsp;&nbsp;&nbsp;&nbsp; 
+	  </TD>
+    </TR>
+   
+    <TR>
+    <TD colspan='2' bgcolor='white'>
+      <b>Advanced options</b> 
+    </TD>
+    </TR>
+    <TR>
+    <TD align='right' bgcolor='#8e98b3'><font color='#FFFFFF'><b>Peptide Mass Toleranc(-t):</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='#e4e4e4'> &nbsp; 
+<INPUT NAME='frm_peptide_mass_tolerance_start' type='TEXT' VALUE='0.6' SIZE='4'>
+to the minus&nbsp; &nbsp;
+<INPUT NAME='frm_peptide_mass_tolerance_end' type='TEXT' VALUE='1.6' SIZE='4'>
+to the plus
+<SELECT name='frm_peptide_mass_units'>
+  <OPTION VALUE='1' selected>Da
+  <OPTION VALUE='2'>ppm
+</SELECT>
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='#8e98b3'><font color='#FFFFFF'><b>Isotope error range(-ti):</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='#e4e4e4' nowrap> &nbsp; 
+<SELECT name='frm_isotope_error_start'>
+  <option value='0' selected>0
+  <option value='-1'>-1
+  <option value='-2'>-2
+</SELECT>
+     to:
+<SELECT name='frm_isotope_error_end'>
+  <option value='0'>0
+  <option value='1' selected>1
+  <option value='2'>2
+</SELECT>
+     &nbsp; <font size='-2'>e.g. -1, 2: abs(exp-calc-n*1.00335Da)&lt;pepTol for n=-1,0,1,2</font> 
+    </TD>
+   </TR>
+   <TR>
+    <TD align=right bgcolor=#8e98b3 valign=top><font color='#FFFFFF'><b>Peptide Charge:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor=#e4e4e4>
+     &nbsp; 
+<SELECT name='frm_CHARGE'>
+  <option value='1+, 2+ and 3+'>1+, 2+ and 3+
+  <option value='2+ and 3+' selected>2+ and 3+
+  <option value='2+, 3+ and 4+'>2+, 3+ and 4+
+</SELECT>
+    &nbsp; <font size='-2'>if spectrum has no charge.</font> 
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='#8e98b3' valign='top'><font color='#FFFFFF'><b>FragmentMethod(-m):</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='#e4e4e4'>
+     &nbsp; 
+<SELECT name='frm_msgfpl_FragmentMethodID'>
+  <option value='0' selected>in the spectrum or CID if no info (Default)
+  <option value='1'>CID
+  <option value='2'>ETD
+  <option value='3'>HCD
+</SELECT>
+    </TD>
+   </TR>
+   <TR>
+   <TR>
+    <TD align='right' bgcolor='#8e98b3' valign='top'><font color='#FFFFFF'><b>Instrument(-inst):</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='#e4e4e4'>&nbsp; 
+<SELECT name='frm_msgfpl_InstrumentID'>
+  <option value='0'  selected>Low-res LCQ/LTQ (Default)
+  <option value='1'>High-res LTQ
+  <option value='2'>TOF
+  <option value='3'>Q-Exactive
+</SELECT>
+    </TD>
+   </TR>
+   <TR>
+   </TABLE>
+  </td>
+ </tr>
+</table>
+</form>

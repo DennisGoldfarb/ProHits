@@ -1,0 +1,787 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+ 
+<title>Prohits</title>
+<script language="Javascript" src="site_javascript.js"></script>
+ 
+	  <table border="0" cellpadding="0" cellspacing="1" width="720">
+  <form name="del_form" method=post action="/prohitsNew/analyst/gel.php">  
+  <input type=hidden name=theaction value=delete>
+  <input type=hidden name=Gel_ID value="">
+  <input type=hidden name=Bait_ID value='0'>
+  <input type=hidden name=sub value=> 
+  
+    <td width="40" height="25" bgcolor="#c5b781" align=center>
+      <div class=tableheader><a href="gel.php?theaction=viewall&order_by=ID&Bait_ID=0">
+    ID</a>
+    <img src='images/icon_order_down.gif'></div>
+    </td>
+    <td width="120" bgcolor="#c5b781" align=center onwrap><div class=tableheader>
+      <div class=tableheader><a href="gel.php?theaction=viewall&order_by=Name&Bait_ID=0">
+
+     Gel Name</a>
+     </div>
+    </td>
+    <td width="150" bgcolor="#c5b781" align=center>
+      <div class=tableheader>Gel Image</div> 
+    </td>
+     
+    </td>
+    <td width="80" bgcolor="#c5b781" align=center>
+
+      <div class=tableheader>Gel Type</div> 
+    </td>
+    <td width="100" bgcolor="#c5b781" align="center"><div class=tableheader>
+      <div class=tableheader><a href="gel.php?theaction=viewall&order_by=OwnerID&Bait_ID=0">
+       Uploaded By</a>
+       </div>
+    </td>
+    <td width="100" bgcolor="#c5b781" align="center"><div class=tableheader>
+
+      <a href="gel.php?theaction=viewall&order_by=DateTime&Bait_ID=0">
+      <div class=tableheader>Created On</a>
+     
+    </td>
+    <td width="130" height="25" bgcolor="#c5b781" align="center">
+      <div class=tableheader>Options</div>
+    </td>
+  </tr>
+    <tr  onmousedown="highlightTR(this,  'click',  '#CCFFCC', '#FFCC99');">
+
+     
+      <td width="" align="left" bgcolor="#D5D5D5"><div class=maintext>&nbsp;
+          481&nbsp;
+        </div>
+      </td>
+      <td width="" align="left" bgcolor="#D5D5D5"><div class=maintext>&nbsp;
+          FL_dummy&nbsp;
+        </div>
+
+      </td>
+      <td width="" align="left" bgcolor="#D5D5D5"><div class=maintext>&nbsp;
+          &nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          dummy&nbsp;
+        </div>
+
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;          
+          Frank Liu&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          2005-12-06&nbsp;
+        </div>
+
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp; &nbsp;
+            <a href="javascript:confirm_delete(481);">
+          <img border="0" src="images/icon_purge.gif" alt="Delete"></a>&nbsp;
+          <a href="gel.php?theaction=modify&Gel_ID=481&Bait_ID=0">
+        <img border="0" src="images/icon_view.gif" alt="Modify"></a>&nbsp;
+  
+<img src='./images/icon_empty.gif'> </div>
+      </td>
+
+    </tr>
+      <tr   onmousedown="highlightTR(this,  'click',  '#CCFFCC', '#FFCC99');">
+    <!--tr bgcolor="#e9e1c9"-->
+      <td width="" align="left"  bgcolor="#D5D5D5"><div class=maintext>&nbsp;
+          480&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"  bgcolor="#D5D5D5"><div class=maintext>&nbsp;
+
+          test&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          480_Water lilies.jpg&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+
+          1-D&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;          
+          Frank Liu&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+
+          2005-12-01&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp; &nbsp;
+            <a href="javascript:confirm_delete(480);">
+          <img border="0" src="images/icon_purge.gif" alt="Delete"></a>&nbsp;
+          <a href="gel.php?theaction=modify&Gel_ID=480&Bait_ID=0">
+        <img border="0" src="images/icon_view.gif" alt="Modify"></a>&nbsp;
+
+  <a href="javascript: view_image('480');"><img src='./images/icon_picture.gif' border=0 alt='view gel image'></a> </div>
+      </td>
+    </tr>
+      <tr  onmouseover="highlightTR(this, 3, 'oover', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmouseout="highlightTR(this, 3, 'out', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmousedown="highlightTR(this, 3, 'over', '#D5D5D5', '#CCFFCC', '#FFCC99');">
+    <!--tr bgcolor="#e9e1c9"-->
+      <td width="" align="left"><div class=maintext>&nbsp;
+          479&nbsp;
+        </div>
+
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          aaaaaa&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          479_43_tree.jpg&nbsp;
+        </div>
+
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          1-D&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;          
+          Frank Liu&nbsp;
+        </div>
+
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          2005-11-14&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp; &nbsp;
+            <a href="javascript:confirm_delete(479);">
+          <img border="0" src="images/icon_purge.gif" alt="Delete"></a>&nbsp;
+
+          <a href="gel.php?theaction=modify&Gel_ID=479&Bait_ID=0">
+        <img border="0" src="images/icon_view.gif" alt="Modify"></a>&nbsp;
+  <a href="javascript: view_image('479');"><img src='./images/icon_picture.gif' border=0 alt='view gel image'></a> </div>
+      </td>
+    </tr>
+      <tr  onmouseover="highlightTR(this, 4, 'over', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmouseout="highlightTR(this, 4, 'out', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmousedown="highlightTR(this, 4, 'click', '#D5D5D5', '#CCFFCC', '#FFCC99');">
+    <!--tr bgcolor="#e9e1c9"-->
+      <td width="" align="left"><div class=maintext>&nbsp;
+
+          466&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          IP150-G884&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+
+          466_IP150-G884.jpg&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          1-D&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;          
+          Mai Vo&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          2005-03-23&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp; &nbsp;
+  <img src="images/icon_empty.gif">        <a href="gel.php?theaction=modify&Gel_ID=466&Bait_ID=0">
+
+        <img border="0" src="images/icon_view.gif" alt="Modify"></a>&nbsp;
+  <a href="javascript: view_image('466');"><img src='./images/icon_picture.gif' border=0 alt='view gel image'></a> </div>
+      </td>
+    </tr>
+      <tr  onmouseover="highlightTR(this, 5, 'over', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmouseout="highlightTR(this, 5, 'out', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmousedown="highlightTR(this, 5, 'click', '#D5D5D5', '#CCFFCC', '#FFCC99');">
+    <!--tr bgcolor="#e9e1c9"-->
+      <td width="" align="left"><div class=maintext>&nbsp;
+          465&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          IP150-G883&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          465_DSC01229.JPG&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          1-D&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;          
+          Mai Vo&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          2005-03-23&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp; &nbsp;
+  <img src="images/icon_empty.gif">        <a href="gel.php?theaction=modify&Gel_ID=465&Bait_ID=0">
+
+        <img border="0" src="images/icon_view.gif" alt="Modify"></a>&nbsp;
+  <a href="javascript: view_image('465');"><img src='./images/icon_picture.gif' border=0 alt='view gel image'></a> </div>
+      </td>
+    </tr>
+      <tr  onmouseover="highlightTR(this, 6, 'over', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmouseout="highlightTR(this, 6, 'out', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmousedown="highlightTR(this, 6, 'click', '#D5D5D5', '#CCFFCC', '#FFCC99');">
+    <!--tr bgcolor="#e9e1c9"-->
+      <td width="" align="left"><div class=maintext>&nbsp;
+          462&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          IP149-G881&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          462_IP149-G881.jpg&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          1-D&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;          
+          Mai Vo&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          2005-03-10&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp; &nbsp;
+  <img src="images/icon_empty.gif">        <a href="gel.php?theaction=modify&Gel_ID=462&Bait_ID=0">
+
+        <img border="0" src="images/icon_view.gif" alt="Modify"></a>&nbsp;
+  <a href="javascript: view_image('462');"><img src='./images/icon_picture.gif' border=0 alt='view gel image'></a> </div>
+      </td>
+    </tr>
+      <tr  onmouseover="highlightTR(this, 7, 'over', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmouseout="highlightTR(this, 7, 'out', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmousedown="highlightTR(this, 7, 'click', '#D5D5D5', '#CCFFCC', '#FFCC99');">
+    <!--tr bgcolor="#e9e1c9"-->
+      <td width="" align="left"><div class=maintext>&nbsp;
+          461&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          IP149-G880&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          461_IP149-G880.jpg&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          1-D&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;          
+          Mai Vo&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          2005-03-10&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp; &nbsp;
+  <img src="images/icon_empty.gif">        <a href="gel.php?theaction=modify&Gel_ID=461&Bait_ID=0">
+
+        <img border="0" src="images/icon_view.gif" alt="Modify"></a>&nbsp;
+  <a href="javascript: view_image('461');"><img src='./images/icon_picture.gif' border=0 alt='view gel image'></a> </div>
+      </td>
+    </tr>
+      <tr  onmouseover="highlightTR(this, 8, 'over', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmouseout="highlightTR(this, 8, 'out', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmousedown="highlightTR(this, 8, 'click', '#D5D5D5', '#CCFFCC', '#FFCC99');">
+    <!--tr bgcolor="#e9e1c9"-->
+      <td width="" align="left"><div class=maintext>&nbsp;
+          460&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          IP149-G879-B&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          460_IP149-G879-B.jpg&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          1-D&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;          
+          Mai Vo&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          2005-03-10&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp; &nbsp;
+  <img src="images/icon_empty.gif">        <a href="gel.php?theaction=modify&Gel_ID=460&Bait_ID=0">
+
+        <img border="0" src="images/icon_view.gif" alt="Modify"></a>&nbsp;
+  <a href="javascript: view_image('460');"><img src='./images/icon_picture.gif' border=0 alt='view gel image'></a> </div>
+      </td>
+    </tr>
+      <tr  onmouseover="highlightTR(this, 9, 'over', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmouseout="highlightTR(this, 9, 'out', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmousedown="highlightTR(this, 9, 'click', '#D5D5D5', '#CCFFCC', '#FFCC99');">
+    <!--tr bgcolor="#e9e1c9"-->
+      <td width="" align="left"><div class=maintext>&nbsp;
+          459&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          IP149-G879A&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          459_IP149-G879-A.jpg&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          1-D&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;          
+          Mai Vo&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          2005-02-01&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp; &nbsp;
+  <img src="images/icon_empty.gif">        <a href="gel.php?theaction=modify&Gel_ID=459&Bait_ID=0">
+
+        <img border="0" src="images/icon_view.gif" alt="Modify"></a>&nbsp;
+  <a href="javascript: view_image('459');"><img src='./images/icon_picture.gif' border=0 alt='view gel image'></a> </div>
+      </td>
+    </tr>
+      <tr  onmouseover="highlightTR(this, 10, 'over', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmouseout="highlightTR(this, 10, 'out', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmousedown="highlightTR(this, 10, 'click', '#D5D5D5', '#CCFFCC', '#FFCC99');">
+    <!--tr bgcolor="#e9e1c9"-->
+      <td width="" align="left"><div class=maintext>&nbsp;
+          458&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          IP148-G877&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          458_IP148-G877.jpg&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          1-D&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;          
+          Mai Vo&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          2005-02-01&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp; &nbsp;
+  <img src="images/icon_empty.gif">        <a href="gel.php?theaction=modify&Gel_ID=458&Bait_ID=0">
+
+        <img border="0" src="images/icon_view.gif" alt="Modify"></a>&nbsp;
+  <a href="javascript: view_image('458');"><img src='./images/icon_picture.gif' border=0 alt='view gel image'></a> </div>
+      </td>
+    </tr>
+      <tr  onmouseover="highlightTR(this, 11, 'over', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmouseout="highlightTR(this, 11, 'out', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmousedown="highlightTR(this, 11, 'click', '#D5D5D5', '#CCFFCC', '#FFCC99');">
+    <!--tr bgcolor="#e9e1c9"-->
+      <td width="" align="left"><div class=maintext>&nbsp;
+          457&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          IP148-G876&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          457_IP148-G876.jpg&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          1-D&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;          
+          Mai Vo&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          2005-01-21&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp; &nbsp;
+  <img src="images/icon_empty.gif">        <a href="gel.php?theaction=modify&Gel_ID=457&Bait_ID=0">
+
+        <img border="0" src="images/icon_view.gif" alt="Modify"></a>&nbsp;
+  <a href="javascript: view_image('457');"><img src='./images/icon_picture.gif' border=0 alt='view gel image'></a> </div>
+      </td>
+    </tr>
+      <tr  onmouseover="highlightTR(this, 12, 'over', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmouseout="highlightTR(this, 12, 'out', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmousedown="highlightTR(this, 12, 'click', '#D5D5D5', '#CCFFCC', '#FFCC99');">
+    <!--tr bgcolor="#e9e1c9"-->
+      <td width="" align="left"><div class=maintext>&nbsp;
+          456&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          IP147-G875&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          456_IP147-G875.jpg&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          1-D&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;          
+          Mai Vo&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          2005-01-21&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp; &nbsp;
+  <img src="images/icon_empty.gif">        <a href="gel.php?theaction=modify&Gel_ID=456&Bait_ID=0">
+
+        <img border="0" src="images/icon_view.gif" alt="Modify"></a>&nbsp;
+  <a href="javascript: view_image('456');"><img src='./images/icon_picture.gif' border=0 alt='view gel image'></a> </div>
+      </td>
+    </tr>
+      <tr  onmouseover="highlightTR(this, 13, 'over', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmouseout="highlightTR(this, 13, 'out', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmousedown="highlightTR(this, 13, 'click', '#D5D5D5', '#CCFFCC', '#FFCC99');">
+    <!--tr bgcolor="#e9e1c9"-->
+      <td width="" align="left"><div class=maintext>&nbsp;
+          455&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          IP148-G878&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          455_IP148-G878.jpg&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          1-D&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;          
+          Mai Vo&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          2005-01-18&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp; &nbsp;
+  <img src="images/icon_empty.gif">        <a href="gel.php?theaction=modify&Gel_ID=455&Bait_ID=0">
+
+        <img border="0" src="images/icon_view.gif" alt="Modify"></a>&nbsp;
+  <a href="javascript: view_image('455');"><img src='./images/icon_picture.gif' border=0 alt='view gel image'></a> </div>
+      </td>
+    </tr>
+      <tr  onmouseover="highlightTR(this, 14, 'over', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmouseout="highlightTR(this, 14, 'out', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmousedown="highlightTR(this, 14, 'click', '#D5D5D5', '#CCFFCC', '#FFCC99');">
+    <!--tr bgcolor="#e9e1c9"-->
+      <td width="" align="left"><div class=maintext>&nbsp;
+          454&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          IP147-G874&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          454_IP147-G874.jpg&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          1-D&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;          
+          Mai Vo&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          2005-01-18&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp; &nbsp;
+  <img src="images/icon_empty.gif">        <a href="gel.php?theaction=modify&Gel_ID=454&Bait_ID=0">
+
+        <img border="0" src="images/icon_view.gif" alt="Modify"></a>&nbsp;
+  <a href="javascript: view_image('454');"><img src='./images/icon_picture.gif' border=0 alt='view gel image'></a> </div>
+      </td>
+    </tr>
+      <tr  onmouseover="highlightTR(this, 15, 'over', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmouseout="highlightTR(this, 15, 'out', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmousedown="highlightTR(this, 15, 'click', '#D5D5D5', '#CCFFCC', '#FFCC99');">
+    <!--tr bgcolor="#e9e1c9"-->
+      <td width="" align="left"><div class=maintext>&nbsp;
+          453&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          IP147-G873&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          453_IP147-G873.jpg&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          1-D&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;          
+          Mai Vo&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          2005-01-13&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp; &nbsp;
+  <img src="images/icon_empty.gif">        <a href="gel.php?theaction=modify&Gel_ID=453&Bait_ID=0">
+
+        <img border="0" src="images/icon_view.gif" alt="Modify"></a>&nbsp;
+  <a href="javascript: view_image('453');"><img src='./images/icon_picture.gif' border=0 alt='view gel image'></a> </div>
+      </td>
+    </tr>
+      <tr  onmouseover="highlightTR(this, 16, 'over', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmouseout="highlightTR(this, 16, 'out', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmousedown="highlightTR(this, 16, 'click', '#D5D5D5', '#CCFFCC', '#FFCC99');">
+    <!--tr bgcolor="#e9e1c9"-->
+      <td width="" align="left"><div class=maintext>&nbsp;
+          452&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          IP146-G872&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          452_IP146-G872.jpg&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          1-D&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;          
+          Mai Vo&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          2005-01-10&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp; &nbsp;
+  <img src="images/icon_empty.gif">        <a href="gel.php?theaction=modify&Gel_ID=452&Bait_ID=0">
+
+        <img border="0" src="images/icon_view.gif" alt="Modify"></a>&nbsp;
+  <a href="javascript: view_image('452');"><img src='./images/icon_picture.gif' border=0 alt='view gel image'></a> </div>
+      </td>
+    </tr>
+      <tr  onmouseover="highlightTR(this, 17, 'over', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmouseout="highlightTR(this, 17, 'out', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmousedown="highlightTR(this, 17, 'click', '#D5D5D5', '#CCFFCC', '#FFCC99');">
+    <!--tr bgcolor="#e9e1c9"-->
+      <td width="" align="left"><div class=maintext>&nbsp;
+          450&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          IP144-G869&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          450_IP144-G689.jpg&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          1-D&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;          
+          Mai Vo&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          2004-12-06&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp; &nbsp;
+  <img src="images/icon_empty.gif">        <a href="gel.php?theaction=modify&Gel_ID=450&Bait_ID=0">
+
+        <img border="0" src="images/icon_view.gif" alt="Modify"></a>&nbsp;
+  <a href="javascript: view_image('450');"><img src='./images/icon_picture.gif' border=0 alt='view gel image'></a> </div>
+      </td>
+    </tr>
+      <tr  onmouseover="highlightTR(this, 18, 'over', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmouseout="highlightTR(this, 18, 'out', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmousedown="highlightTR(this, 18, 'click', '#D5D5D5', '#CCFFCC', '#FFCC99');">
+    <!--tr bgcolor="#e9e1c9"-->
+      <td width="" align="left"><div class=maintext>&nbsp;
+          449&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          IP141-G867&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          449_IP141-G867.jpg&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          1-D&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;          
+          Mai Vo&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          2004-12-06&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp; &nbsp;
+  <img src="images/icon_empty.gif">        <a href="gel.php?theaction=modify&Gel_ID=449&Bait_ID=0">
+
+        <img border="0" src="images/icon_view.gif" alt="Modify"></a>&nbsp;
+  <a href="javascript: view_image('449');"><img src='./images/icon_picture.gif' border=0 alt='view gel image'></a> </div>
+      </td>
+    </tr>
+      <tr  onmouseover="highlightTR(this, 19, 'over', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmouseout="highlightTR(this, 19, 'out', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmousedown="highlightTR(this, 19, 'click', '#D5D5D5', '#CCFFCC', '#FFCC99');">
+    <!--tr bgcolor="#e9e1c9"-->
+      <td width="" align="left"><div class=maintext>&nbsp;
+          448&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          IP141-G866&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          448_IP141-G866.jpg&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          1-D&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;          
+          Mai Vo&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          2004-12-06&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp; &nbsp;
+  <img src="images/icon_empty.gif">        <a href="gel.php?theaction=modify&Gel_ID=448&Bait_ID=0">
+
+        <img border="0" src="images/icon_view.gif" alt="Modify"></a>&nbsp;
+  <a href="javascript: view_image('448');"><img src='./images/icon_picture.gif' border=0 alt='view gel image'></a> </div>
+      </td>
+    </tr>
+      <tr  onmouseover="highlightTR(this, 20, 'over', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmouseout="highlightTR(this, 20, 'out', '#D5D5D5', '#CCFFCC', '#FFCC99');" onmousedown="highlightTR(this, 20, 'click', '#D5D5D5', '#CCFFCC', '#FFCC99');">
+    <!--tr bgcolor="#e9e1c9"-->
+      <td width="" align="left"><div class=maintext>&nbsp;
+          447&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          IP141-G865&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp;
+          447_IP141-G865.jpg&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          1-D&nbsp;
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;          
+          Mai Vo&nbsp;
+
+        </div>
+      </td>
+      <td width="" align="center"><div class=maintext>&nbsp;
+          2004-12-06&nbsp;
+        </div>
+      </td>
+      <td width="" align="left"><div class=maintext>&nbsp; &nbsp;
+  <img src="images/icon_empty.gif">        <a href="gel.php?theaction=modify&Gel_ID=447&Bait_ID=0">
+
+        <img border="0" src="images/icon_view.gif" alt="Modify"></a>&nbsp;
+  <a href="javascript: view_image('447');"><img src='./images/icon_picture.gif' border=0 alt='view gel image'></a> </div>
+      </td>
+    </tr>
+      </form>
+      </table>
+    </td>
+  </tr>
+
+</table>
+ 
+</body>
+</html>
+

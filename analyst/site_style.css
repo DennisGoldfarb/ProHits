@@ -1,0 +1,389 @@
+.Main_menu:link, .Main_menu:visited, .Main_menu:hover, .Main_menu:active{ 
+        COLOR: #000000;
+        FONT-FAMILY: Arial, Tahoma, Helvetica, sans-serif;
+        FONT-SIZE: 13pt;
+        TEXT-DECORATION: none;
+        MARGIN:0 0 0pt 0pt;
+        font-weight : bold;
+} 
+A.left_menu:link
+{
+        COLOR: #006090;
+        FONT-FAMILY: Arial, Tahoma, Helvetica, sans-serif;
+        FONT-SIZE: 9pt;
+        TEXT-DECORATION: none;
+        MARGIN:0 0 0pt 0pt;
+        font-weight : bold;
+}
+A.left_menu:visited
+{
+        COLOR: #006090;
+        FONT-FAMILY: Arial, Tahoma, Helvetica, sans-serif;
+        TEXT-DECORATION: none;
+        FONT-SIZE: 9pt;
+        MARGIN:0 0 0pt 0pt;
+        font-weight : bold;
+}
+A.left_menu:hover
+{
+        COLOR: #6600ff;
+        FONT-FAMILY: Arial, Tahoma, Helvetica, sans-serif;
+        FONT-SIZE: 9pt;
+        TEXT-DECORATION: none;
+		    MARGIN:0 0 0pt 0pt;
+        font-weight : bold;
+}
+A.button:link
+{
+        COLOR: #000099;
+        FONT-FAMILY: verdana,sans-serif;
+        FONT-SIZE: 10pt;
+        TEXT-DECORATION: none;
+        MARGIN:0 0 0pt 0pt;
+
+}
+A.button:visited
+{
+        COLOR: #000099;
+        FONT-FAMILY: verdana,sans-serif;
+        TEXT-DECORATION: none;
+        FONT-SIZE: 10pt;
+        MARGIN:0 0 0pt 0pt;
+
+}
+A.button:hover
+{
+        COLOR: red;
+        FONT-FAMILY: verdana,sans-serif;
+        FONT-SIZE: 10pt;
+        TEXT-DECORATION: none;
+		MARGIN:0 0 0pt 0pt;
+}
+A.tipButton:link
+{
+        COLOR: #000099;
+        FONT-FAMILY: verdana,sans-serif;
+        FONT-SIZE: 10pt;
+        TEXT-DECORATION: none;
+        MARGIN:0 0 0pt 0pt;
+
+}
+A.tipButton:visited
+{
+        COLOR: #000099;
+        FONT-FAMILY: verdana,sans-serif;
+        TEXT-DECORATION: none;
+        FONT-SIZE: 10pt;
+        MARGIN:0 0 0pt 0pt;
+
+}
+A.tipButton:hover
+{
+        COLOR: red;
+        FONT-FAMILY: verdana,sans-serif;
+        FONT-SIZE: 10pt;
+        TEXT-DECORATION: none;
+		MARGIN:0 0 0pt 0pt;
+}
+.pop_header_text
+{
+   font-family : Lucida Calligraphy;
+   color: #4a4a4a;
+   FONT-SIZE: 16pt;
+}
+.maintext
+{
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   FONT-SIZE: 8pt;
+}
+.maintext_bold
+{
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   font-weight : bold;
+   FONT-SIZE: 8pt;
+}
+.maintext_bold_white
+{
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   font-weight : bold;
+   FONT-SIZE: 8pt;
+   COLOR: white;
+}
+.maintext_nowrap
+{
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   FONT-SIZE: 8pt;
+   white-space: nowrap
+}
+.maintext_extra
+{
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   FONT-SIZE: 9pt;
+   white-space: nowrap
+}
+.maintext_extra_bold
+{
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   FONT-SIZE: 9pt;
+   font-weight : bold;
+   white-space: nowrap
+}
+.maintext_color
+{
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   COLOR: #5e5eff;
+   FONT-SIZE: 8pt;
+}
+.large
+{
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   FONT-SIZE: 11pt;
+}
+.middle
+{
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   FONT-SIZE: 9pt;
+}
+.middle_bold
+{
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   FONT-SIZE: 10pt;
+   font-weight : bold;
+}
+.small
+{
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   FONT-SIZE: 9pt;
+}
+.small_bold
+{
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   FONT-SIZE: 9pt;
+   font-weight : bold;
+}
+.excludetext
+{	
+	 COLOR: #505050;
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   FONT-SIZE: 8pt;
+}
+.platetext
+{
+   COLOR: white;
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   FONT-SIZE: 7pt;
+}
+.tableheader
+{
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   COLOR: WHITE;
+   FONT-SIZE: 8pt;
+   font-weight : bold;
+}
+.tableheader_black
+{
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   COLOR: black;
+   FONT-SIZE: 9pt;
+   font-weight : bold;
+}
+.tableheader_light
+{
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   COLOR: WHITE;
+   FONT-SIZE: 8pt;
+}
+.tableheader_title
+{
+   font-family : Arial, Tahoma, Helvetica, sans-serif;
+   COLOR: #000000;
+   FONT-SIZE: 8pt;
+   background-color: #f7e0c1;
+}
+.green_but   
+{ background-color: #3cb371; 
+  font-family: Arial; 
+  FONT-SIZE: 8pt;
+  COLOR: WHITE;
+  font-weight : bold;
+  border-style: solid; 
+  border-color: #008080;
+}
+.blue_but   
+{ background-color: #adb6e7; 
+  font-family: Arial; 
+  FONT-SIZE: 8pt;
+  COLOR: WHITE;
+  font-weight : bold;
+  border-style: solid; 
+  border-color: #31659c;
+}
+.black_but   
+{ background-color: #9b9b9b; 
+  font-family: Arial; 
+  FONT-SIZE: 8pt;
+  COLOR: WHITE;
+  font-weight : bold;
+  border-style: solid; 
+  border-color: #000000;
+}
+.text_bgcolor   
+{ 
+  background-color: #ffffff; 
+}
+.tooltip { position: absolute; display: none; left: 300; top: 20; }
+.status_show_1 { display: none;}
+.status_show_2 { display: block;}
+.status_show_3 { position: absolute; display: block; border: black solid 1px; }
+
+TEXTAREA { FONT-SIZE: 8pt; FONT-FAMILY: verdana,arial,helvetica,sans-serif }
+INPUT { FONT-SIZE: 8pt; FONT-FAMILY: verdana,arial,helvetica,sans-serif }
+
+INPUT.small
+{
+    FONT-SIZE: 7pt;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+
+}
+SELECT.small
+{
+    FONT-SIZE: 7pt;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+
+}
+TEXTAREA.small
+{
+    FONT-SIZE: 7pt;
+    FONT-FAMILY: verdana,arial,helvetica,sans-serif
+
+}
+div.tabArea {
+  font-size: 90%;
+  font-weight: bold;
+  padding: 5px 2em 5px 1em;
+}
+a.hit_tab {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-bottom-width: 0px;
+  padding: 5px 1em 5px 1em;
+  position: relative;
+  text-decoration: none;
+  font-family : Arial, Helvetica, sans-serif;
+  z-index: 100;
+}
+a.hit_tab.activeTab {
+  background-color: #000000;
+  color: #ffffff;
+  z-index: 101;
+}
+a.hit_tab:link, a.hit_tab:visited{
+  color: #717171;
+}
+a.hit_tab.inactive:hover{ 
+background: #99ffff;
+}
+div.tabline {
+  background-color: #000000;
+  padding: 4px;
+  position: relative;
+  z-index: 102;
+}
+
+
+
+.bchead {
+ background: #ffffff;
+ padding:2px;
+ border-bottom: 11px #000000 solid;
+}
+.satabs {
+ margin-top: 1px;
+ font-size: 90%;
+ font-family: Arial, Helvetica, sans-serif;
+ font-weight : bold;
+}
+.satabs b {
+ background: #000000;
+ color: #ffffff;
+ padding: 5px 1em 5px 1em;
+}
+.satabs a {
+ border: 1px #000000 solid;
+ color: #606060;
+ background: #ffffff;
+ padding: 2px 1em 2px 1em;
+ text-decoration: none;
+}
+.satabs a:hover {
+ background: yellow;
+}
+#dir_tree{
+	margin-left:0px;
+	padding-left:0px;
+}
+#dir_tree_topNodes{
+	margin-left:0px;
+	padding-left:0px;
+}
+#dir_tree_topNodes ul{
+	margin-left:20px;
+	padding-left:0px;
+}
+#dir_tree li .tree_link{
+	line-height:13px;
+	padding-left:2px;
+}
+#dir_tree li img{
+	padding-top:2px;
+}
+#dir_tree li{
+	list-style-type:none;	
+	font-family: arial;
+	font-size:13px;
+}  
+#dir_tree li a{
+	color: #000000;
+	text-decoration:none;
+}  
+.dir_tree_text {
+  color: black;
+  background-color: #d1d1d1;
+  font-family: arial;
+  font-size:10px;
+}
+.dir_tree_text_lite {
+  color: black;
+  background-color: yellow;
+  font-family: arial;
+  font-size:11px;
+}
+.tdback_star_image { 
+  float:left;
+  background-image: url('./gel_images/icon_star.gif');
+  WIDTH: 17px; 
+  HEIGHT: 17px;
+  font-family : Arial, Helvetica, sans-serif;
+  FONT-SIZE:6pt;
+  TEXT-ALIGN: center;
+}
+TD { font-family : Arial, Helvetica, sans-serif; FONT-SIZE:10pt;}
+A.small_button:link
+{
+        COLOR: #000000;
+        FONT-FAMILY: verdana,sans-serif;
+        FONT-SIZE: 6pt;
+        TEXT-DECORATION: none;
+        MARGIN:0 0 0pt 0pt;
+
+}
+A.small_button:visited
+{
+        COLOR: #000000;
+        FONT-FAMILY: verdana,sans-serif;
+        TEXT-DECORATION: none;
+        FONT-SIZE: 6pt;
+        MARGIN:0 0 0pt 0pt;
+
+}
+ 

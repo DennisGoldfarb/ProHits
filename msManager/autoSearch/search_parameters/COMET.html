@@ -1,0 +1,160 @@
+<form name='COMET_para_frm' method='post' action='/Prohits/msManager/ms_search_parameter.php'>
+<input type='hidden' name='frm_multiple_select_str' value=''>
+<input type='hidden' name='frm_myaction' value='yes'>
+<input type='hidden' name=frm_Machine value=''>
+<input type='hidden' name='frm_setName' value=''>
+<input type='hidden' name='frm_set' value=''>
+<input type='hidden' name='frm_setID' value=''>
+<input type='hidden' name=frm_Description value=''>
+<input type='hidden' name='SearchEngine' value='COMET'>
+<input type='hidden' name='frm_ProjectID' value='0'>
+
+<table border='0' cellpadding='0' cellspacing='2' width='100%'>
+  <tr>
+    <td align='right' nowrap colspan='4'>    
+       <!--input type='button' value='Save' onClick='check_COMET_form(this.form)'-->
+<input type='button' value='Save' onClick='check_form(this.form)'>
+    </td>
+  </tr>
+  <tr>
+    <td colspan='2' valign='top'>
+   <TABLE width='100%' cellspacing='1' cellpadding='1' border='0'>
+     <TR>
+      <TD colspan='2' bgcolor='white'>
+      <b>Enzyme</b> 
+      </TD>
+     </TR>
+     <TR>
+      <TD align='right' bgcolor='@#@td_label_color@#@' width='280'><font color='#FFFFFF'><b>Enzyme:</b></font>&nbsp; &nbsp; 
+      </TD>
+      <TD bgcolor='@#@td_base_color@#@'>
+<SELECT name='frm_search_enzyme_number'>
+<OPTION VALUE='0'>No_enzyme
+<OPTION VALUE='1' selected>Trypsin
+<OPTION VALUE='2'>Trypsin/P
+<OPTION VALUE='3'>Lys_C
+<OPTION VALUE='4'>Lys_N
+<OPTION VALUE='5'>Arg_C
+<OPTION VALUE='6'>Asp_N
+<OPTION VALUE='7'>CNBr
+<OPTION VALUE='8'>Glu_C
+<OPTION VALUE='9'>PepsinA
+<OPTION VALUE='10'>Chymotrypsin
+</SELECT>
+      </TD>
+     </TR>
+   <TR>
+    <TD align='right' bgcolor='@#@td_label_color@#@'><font color='#FFFFFF'><b>Max missed cleavages:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='@#@td_base_color@#@'>
+<SELECT name='frm_allowed_missed_cleavage'>
+<OPTION VALUE='0'>0
+<OPTION VALUE='1'>1
+<OPTION VALUE='2' selected>2
+<OPTION VALUE='3'>3
+<OPTION VALUE='4'>4
+<OPTION VALUE='5'>5
+</SELECT>
+     &nbsp; &nbsp; &nbsp; <b>Semi-style cleavage</b> 
+<INPUT name='frm_num_enzyme_termini' type='CHECKBOX' value='1'>
+    &nbsp;&nbsp;&nbsp;&nbsp; 
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='@#@td_label_color@#@'><font color='#FFFFFF'><b>Decoy:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='@#@td_base_color@#@'>
+<INPUT name='frm_decoy_search' type='CHECKBOX' value='1'>
+    &nbsp;&nbsp;&nbsp;&nbsp; 
+	  </TD>
+   </TR>
+   <TR>
+    <TD colspan='2' bgcolor='white'>
+      <b>Advanced options</b> 
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor=@#@td_label_color@#@><font color='#FFFFFF'><b>Parent Mass Type:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='@#@td_base_color@#@'>
+<INPUT name='frm_mass_type_parent' type='RADIO' value='1' checked>Monoisotopic
+<INPUT name='frm_mass_type_parent' type='RADIO' value='0'>Average
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='@#@td_label_color@#@'><font color='#FFFFFF'><b>Fragment Mass Type:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='@#@td_base_color@#@'>
+<INPUT name='frm_mass_type_fragment' type='RADIO' value='1' checked>Monoisotopic
+<INPUT name='frm_mass_type_fragment' type='RADIO' value='0'>Average
+    </TD>
+   </TR>
+   <TR>
+    <TD align=right bgcolor=@#@td_label_color@#@><font color='#FFFFFF'><b>Peptide Mass Tolerance:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor=@#@td_base_color@#@> &nbsp;
+<INPUT name='frm_peptide_mass_tolerance' type='TEXT' value='3.00' size='6'>
+&nbsp;
+<SELECT name='frm_peptide_mass_units'>
+<OPTION VALUE='0' selected>amu
+<OPTION VALUE='2'>ppm
+</SELECT>
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='@#@td_label_color@#@'><font color='#FFFFFF'><b> Binning to use on fragment ions:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='@#@td_base_color@#@'> &nbsp;
+<INPUT name='frm_fragment_bin_tol' type='TEXT' value='1.0005' size='6'>
+    &nbsp;amu  &nbsp; &nbsp; &nbsp;offset position to start the binning
+<INPUT name='frm_fragment_bin_offset' type='TEXT' value='0.4' size='2'>
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='@#@td_label_color@#@'><font color='#FFFFFF'><b> Theoretical_fragment_ions:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='@#@td_base_color@#@'> &nbsp;
+<INPUT name='frm_theoretical_fragment_ions' type='TEXT' value='1' size='2'>
+    0=default peak shape, 1=M peak only
+    </TD>
+   </TR>
+   <TR>
+    <TD align=right bgcolor='@#@td_label_color@#@'><font color='#FFFFFF'><b>Neutral Losses (H2O/NH3):</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='@#@td_base_color@#@'> &nbsp;
+<INPUT name='frm_use_NL_ions' type='CHECKBOX' value='1' CHECKED>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='@#@td_label_color@#@'><font color='#FFFFFF'><b>Isotope error:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='@#@td_base_color@#@'> &nbsp;
+<SELECT name='frm_isotope_error'>
+<OPTION VALUE='0' selected>0
+<OPTION VALUE='1'>1
+<OPTION VALUE='2'>2
+</SELECT>
+    </TD>
+   </TR>
+   <TR>
+    <TD align='right' bgcolor='@#@td_label_color@#@' valign='top'><font color='#FFFFFF'><b>Precursor charge:</b></font>&nbsp; &nbsp; 
+    </TD>
+    <TD bgcolor='@#@td_base_color@#@'> &nbsp; 
+<SELECT name='frm_CHARGE'>
+<OPTION VALUE='1+, 2+ and 3+' selected>1+, 2+ and 3+
+<OPTION VALUE='2+ and 3+'>2+ and 3+
+<OPTION VALUE='2+, 3+ and 4+'>2+, 3+ and 4+
+</SELECT>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Override charge:</b>&nbsp;&nbsp;
+<SELECT name='frm_override_charge'>
+<OPTION VALUE='0' selected>no
+<OPTION VALUE='1'>yes
+</SELECT> 
+    </TD>
+   </TR>
+   </TABLE>
+  </td>
+ </tr>
+</table>
+</form>

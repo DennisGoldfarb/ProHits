@@ -1,0 +1,35 @@
+#####2015-11-30 15:31:17---Changed by Prohits Administrator
+Mascot::
+tpp::
+GeneLevel_COMET::
+GeneLevel_MSPLIT::
+GeneLevel_Mascot::
+GeneLevel_iProphet::
+#####2015-11-30 16:15:50---Changed by Prohits Administrator
+GeneLevel_iProphet::SpectralCount>1,Unique>1
+GeneLevel_Mascot::
+GeneLevel_MSPLIT::
+GeneLevel_COMET::
+tpp::
+Mascot::
+#####2015-11-30 16:15:56---Changed by Prohits Administrator
+Mascot::
+tpp::
+GeneLevel_COMET::
+GeneLevel_MSPLIT::
+GeneLevel_Mascot::SpectralCount>2,Unique>2
+GeneLevel_iProphet::SpectralCount>1,Unique>1
+#####2015-11-30 16:16:33---Changed by Prohits Administrator
+Mascot::Expect>6,Pep_num>6,Pep_num_uniqe>6
+tpp::PROBABILITY>0.05,TOTAL_NUMBER_PEPTIDES>5,UNIQUE_NUMBER_PEPTIDES>5
+GeneLevel_COMET::SpectralCount>4,Unique>4
+GeneLevel_MSPLIT::SpectralCount>3,Unique>3
+GeneLevel_Mascot::SpectralCount>2,Unique>2
+GeneLevel_iProphet::SpectralCount>1,Unique>1
+#####2015-11-30 16:17:02---Changed by Prohits Administrator
+Mascot::
+tpp::
+GeneLevel_COMET::
+GeneLevel_MSPLIT::
+GeneLevel_Mascot::
+GeneLevel_iProphet::

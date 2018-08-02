@@ -1,0 +1,79 @@
+
+
+PSID:23682 LTQ_DEMO. Convert file(s) to mzXML. Start at  2014-11-17 10:13:55
+Parameter: --64 --mz64 --inten64 --filter "peakPicking true 2" --filter "msLevel 2" -g| -proteinpilot /doubleprecision
+the file /mnt/thegpm/Prohits/ProhitsStorage/LTQ_DEMO/Uploaded/18484_REP3_1ug_Ecoli_NewStock2_SWATH_1.wiff can not be converted to /mnt/thegpm/Prohits/ProhitsStorage/LTQ_DEMO/Uploaded/18484_REP3_1ug_Ecoli_NewStock2_SWATH_1.mgf.
+Converter return 0 file size.
+Created file:.mzML
+End file converting at  2014-11-17 10:14:24
+the file /mnt/thegpm/Prohits/ProhitsStorage/LTQ_DEMO/Uploaded/18484_REP3_1ug_Ecoli_NewStock2_SWATH_1.wiff can not be converted to /mnt/thegpm/Prohits/ProhitsStorage/LTQ_DEMO/Uploaded/18484_REP3_1ug_Ecoli_NewStock2_SWATH_1.prh1.mgf.
+Converter return 0 file size.
+Created file:.mzML
+End file converting at  2014-11-17 10:32:44
+the file /mnt/thegpm/Prohits/ProhitsStorage/LTQ_DEMO/Uploaded/18484_REP3_1ug_Ecoli_NewStock2_SWATH_1.wiff can not be converted to /mnt/thegpm/Prohits/ProhitsStorage/LTQ_DEMO/Uploaded/18484_REP3_1ug_Ecoli_NewStock2_SWATH_1.prh2.mgf.
+Converter return 0 file size.
+the file /mnt/thegpm/Prohits/ProhitsStorage/LTQ_DEMO/Uploaded/18484_REP3_1ug_Ecoli_NewStock2_SWATH_1.wiff can not be converted to /mnt/thegpm/Prohits/ProhitsStorage/LTQ_DEMO/Uploaded/18484_REP3_1ug_Ecoli_NewStock2_SWATH_1.prh1.mgf.
+Converter return 0 file size.
+End file converting at  2014-11-17 11:07:51
+the file /mnt/thegpm/Prohits/ProhitsStorage/LTQ_DEMO/Uploaded/18484_REP3_1ug_Ecoli_NewStock2_SWATH_1.wiff can not be converted to /mnt/thegpm/Prohits/ProhitsStorage/LTQ_DEMO/Uploaded/18484_REP3_1ug_Ecoli_NewStock2_SWATH_1.mgf.
+Converter return 0 file size.
+End file converting at  2014-11-17 11:11:03
+the file /mnt/thegpm/Prohits/ProhitsStorage/LTQ_DEMO/Uploaded/18484_REP3_1ug_Ecoli_NewStock2_SWATH_1.wiff can not be converted to /mnt/thegpm/Prohits/ProhitsStorage/LTQ_DEMO/Uploaded/18484_REP3_1ug_Ecoli_NewStock2_SWATH_1.mgf.
+Converter return 0 file size.
+End file converting at  2014-11-17 11:12:41
+Created file:18484_REP3_1ug_Ecoli_NewStock2_SWATH_1.mzXML.gz
+End file converting at  2014-11-17 12:33:18
+PSID:18143 LTQ_DEMO. Convert file(s) to mzXML. Start at  2015-03-24 12:51:56
+Parameter: --32 --mz32 --inten32 --filter "peakPicking true 2" --filter "msLevel 2" -g| -profile /singleprecision
+Created file:18484_REP3_1ug_Ecoli_NewStock2_SWATH_1.prh1.mzXML.gz
+End file converting at  2015-03-24 15:29:03
+PSID:22532 LTQ_DEMO. Convert file(s) to mzXML. Start at  2015-04-14 13:53:06
+Parameter: --64 --mz64 --inten64 --filter "peakPicking true 2" --filter "msLevel 2" --filter "threshold bpi-relative .5 most-intense" -g| -proteinpilot /doubleprecision
+Created file:H02_25576.prh1.mzXML
+End file converting at  2015-04-14 13:53:17
+PSID:7176 LTQ_DEMO. Convert file(s) to mgf. Start at  2015-11-3 11:46:35
+Parameter: --64 --mz64 --inten64 --filter "peakPicking true 2" --filter "msLevel 2" -g
+Created file:H02_25576.prh1.mgf
+End file converting at  2015-11-3 11:46:46
+Fatal Error--<font color="#FF0000">session id is not in session table va1jnvsivooanl9g10sor30480. or the user has no permission to run the script</font>;<br>
+Script Name: /Prohits/msManager/autoBackup/pop_backup_now.php;<br>
+Start time: 2015-11-23 17:23:55;
+PSID:27041 LTQ_DEMO
+Backup LTQ_DEMO start at 2015-11-23 17:24:51
+process LTQ_DEMO 2015-11-23 17:24:51
+copy 0: /var/www/html/Prohits/ProhitsStorage/TEST/YEAST_P2
+copy 0: /var/www/html/Prohits/ProhitsStorage/TEST/Human_P3
+end of LTQ_DEMO 2015-11-23 17:24:51
+PSID:27089 LTQ_DEMO
+Backup LTQ_DEMO start at 2015-11-23 17:26:07
+process LTQ_DEMO 2015-11-23 17:26:07
+copied 5: /var/www/html/Prohits/ProhitsStorage/TEST/YEAST_P2
+copied 4: /var/www/html/Prohits/ProhitsStorage/TEST/Human_P3
+end of LTQ_DEMO 2015-11-23 17:26:08
+PSID:8902 LTQ_DEMO
+Backup LTQ_DEMO start at 2015-11-24 14:07:52
+process LTQ_DEMO 2015-11-24 14:07:52
+copied 4: /var/www/html/Prohits/ProhitsStorage/TEST/Human_P3
+end of LTQ_DEMO 2015-11-24 14:07:56
+PSID:8970 LTQ_DEMO
+Backup LTQ_DEMO start at 2015-11-24 14:10:22
+process LTQ_DEMO 2015-11-24 14:10:22
+end of LTQ_DEMO 2015-11-24 14:10:22
+PSID:9003 LTQ_DEMO
+Backup LTQ_DEMO start at 2015-11-24 14:11:37
+process LTQ_DEMO 2015-11-24 14:11:37
+copied 1: /var/www/html/Prohits/ProhitsStorage/TEST/Human_P3
+end of LTQ_DEMO 2015-11-24 14:11:39
+process LTQ_DEMO 2015-11-24 14:15:18
+copied 1: /var/www/html/Prohits/ProhitsStorage/TEST/Human_P3
+end of LTQ_DEMO 2015-11-24 14:15:18
+process LTQ_DEMO 2015-11-24 14:18:24
+end of LTQ_DEMO 2015-11-24 14:18:24
+process LTQ_DEMO 2015-11-24 14:18:50
+copied 6: /var/www/html/Prohits/ProhitsStorage/TEST/Human_P3
+end of LTQ_DEMO 2015-11-24 14:18:56
+PSID:9143 LTQ_DEMO
+Backup LTQ_DEMO start at 2015-11-24 14:20:46
+process LTQ_DEMO 2015-11-24 14:20:46
+copied 6: /var/www/html/Prohits/ProhitsStorage/TEST/Human_P3
+end of LTQ_DEMO 2015-11-24 14:20:52

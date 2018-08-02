@@ -1,0 +1,3 @@
+
+/usr/bin/php ./autoBackup/raw_backup_shell.php > /dev/null & echo $!
+2010-01-12 10:23:46

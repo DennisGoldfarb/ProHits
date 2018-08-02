@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    <graph label="Prohits Report" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cy="http://www.cytoscape.org" xmlns="http://www.cs.rpi.edu/XGMML" >
+      <att name="documentVersion" value="1.1"/>
+      <att name="networkMetadata">
+        <rdf:RDF>
+          <rdf:Description rdf:about="http://www.cytoscape.org/">
+            <dc:type>Protein-Protein Interaction</dc:type>
+            <dc:description>N/A</dc:description>
+            <dc:identifier>N/A</dc:identifier>
+            <dc:date>2016-08-05 10:56:46</dc:date>
+            <dc:title>Prohits Report</dc:title>
+            <dc:source>http://www.cytoscape.org/</dc:source>
+            <dc:format>Cytoscape-XGMML</dc:format>
+          </rdf:Description>
+        </rdf:RDF>
+      </att>
+      <att type="string" name="backgroundColor" value="#ccccff"/>
+      <att type="real" name="GRAPH_VIEW_ZOOM" value="12.428278629586"/>
+      <att type="real" name="GRAPH_VIEW_CENTER_X" value="28.966199642725"/>
+      <att type="real" name="GRAPH_VIEW_CENTER_Y" value="28.966199642725"/>
+<node label="TPK2" id="1">
+    <att type="string" name="Gene Name" value="TPK2"/>
+  <graphics type="ELLIPSE" h="35" w="35" x="28.966199642725" y="28.966199642725" fill="#ff0000" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+<node label="DUG1" id="2">
+    <att type="string" name="Gene Name" value="DUG1"/>
+  <att type="string" name="Gene ID" value="850605"/>
+  <att type="real" name="Frequency" value="1.00"/>
+  <graphics type="ELLIPSE" h="35" w="35" x="7.2846878764754" y="48.174342948942" fill="#ffffff" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+<node label="KRT1" id="3">
+    <att type="string" name="Gene Name" value="KRT1"/>
+  <att type="string" name="Gene ID" value="3848"/>
+  <att type="real" name="Frequency" value="1.00"/>
+  <graphics type="ELLIPSE" h="35" w="35" x="39.237755595085" y="56.050066797541" fill="#ffffff" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+<node label="RRP6" id="4">
+    <att type="string" name="Gene Name" value="RRP6"/>
+  <att type="string" name="Gene ID" value="854162"/>
+  <att type="real" name="Frequency" value="0.00"/>
+  <graphics type="ELLIPSE" h="35" w="35" x="57.93239928545" y="28.966199642725" fill="#ffffff" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+<node label="ULS1" id="5">
+    <att type="string" name="Gene Name" value="ULS1"/>
+  <att type="string" name="Gene ID" value="854363"/>
+  <att type="real" name="Frequency" value="0.00"/>
+  <graphics type="ELLIPSE" h="35" w="35" x="39.237755595085" y="1.8823324879087" fill="#ffffff" width="1" outline="#666666" cy:nodeTransparency="1.0" cy:nodeLabelFont="SansSerif.bold-0-12" cy:borderLineType="solid"/>
+  </node>
+<edge label="TPK2 (---) DUG1" source="1" target="2">
+  <att type="real" name="Protein Probability" value="39"/>
+  <att type="real" name="Peptide Number" value="39"/>
+  <att type="real" name="Unique Peptide Number" value="1.00"/>
+  <att type="real" name="Coverage" value="1.00"/>
+  <att type="real" name="Frequency" value="1.00"/>
+  <graphics width="1" fill="#000080" cy:sourceArrow="0" cy:targetArrow="3" cy:sourceArrowColor="#000080" cy:targetArrowColor="#000080" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+</edge>
+<edge label="TPK2 (---) KRT1" source="1" target="3">
+  <att type="real" name="Protein Probability" value="3"/>
+  <att type="real" name="Peptide Number" value="3"/>
+  <att type="real" name="Unique Peptide Number" value="1.00"/>
+  <att type="real" name="Coverage" value="1.00"/>
+  <att type="real" name="Frequency" value="1.00"/>
+  <graphics width="1" fill="#000080" cy:sourceArrow="0" cy:targetArrow="3" cy:sourceArrowColor="#000080" cy:targetArrowColor="#000080" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+</edge>
+<edge label="TPK2 (---) RRP6" source="1" target="4">
+  <att type="real" name="Protein Probability" value="1"/>
+  <att type="real" name="Peptide Number" value="1"/>
+  <att type="real" name="Unique Peptide Number" value="0.00"/>
+  <att type="real" name="Coverage" value="0.00"/>
+  <att type="real" name="Frequency" value="0.00"/>
+  <graphics width="1" fill="#aaaaff" cy:sourceArrow="0" cy:targetArrow="3" cy:sourceArrowColor="#aaaaff" cy:targetArrowColor="#aaaaff" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+</edge>
+<edge label="TPK2 (---) ULS1" source="1" target="5">
+  <att type="real" name="Protein Probability" value="1"/>
+  <att type="real" name="Peptide Number" value="1"/>
+  <att type="real" name="Unique Peptide Number" value="0.00"/>
+  <att type="real" name="Coverage" value="0.00"/>
+  <att type="real" name="Frequency" value="0.00"/>
+  <graphics width="1" fill="#aaaaff" cy:sourceArrow="0" cy:targetArrow="3" cy:sourceArrowColor="#aaaaff" cy:targetArrowColor="#aaaaff" cy:edgeLabelFont="Default-0-10" cy:edgeLineType="SOLID" cy:curved="STRAIGHT_LINES"/>
+</edge>
+</graph>
