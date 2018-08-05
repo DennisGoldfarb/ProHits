@@ -313,7 +313,7 @@ foreach($Bands as $BandValue){
    //this part should be change to find out if there is any uploaded files
    //and check uploaded type to show report icon.
    if($AUTH->Insert){
-      echo "<a  title='upload search results' href=javascript:popwin('upload_search_results_pop.php?upload_search_results=yes&no_DECOY=1&passed_Band_ID=".$BandValue['ID']."',650,700)><img src=./images/icon_upload.gif border=0 alt='upload TPP'></a>\n";
+      echo "<a  title='upload search results' href=javascript:popwin('upload_search_results_pop.php?upload_search_results=yes&no_DECOY=1&passed_Band_ID=".$BandValue['ID']."',750,700)><img src=./images/icon_upload.gif border=0 alt='upload TPP'></a>\n";
    }
    if($hitType){
       echo "<img src=./images/icon_empty.gif border=0>\n";
