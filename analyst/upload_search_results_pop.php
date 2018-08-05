@@ -947,8 +947,8 @@ if($_SESSION['AUTH']->Insert){
   </DIV>
 
 
-  // OPENMS START
-  <DIV ID='upload_openms_div' STYLE="Display:<?php echo ($isWrongFormat_TPP=='1')?"block":"none"?>; border: #a4a4a4 solid 1px; width: <?php echo $divSize;?>">
+  <!-- OPENMS START -->
+  <DIV ID='upload_OpenMS_div' STYLE="Display:<?php echo ($isWrongFormat_TPP=='1')?"block":"none"?>; border: #a4a4a4 solid 1px; width: <?php echo $divSize;?>">
       <table border=1 cellspacing="2" cellpadding="0" width=100%>
       <tr>
           <td colspan=3 bgcolor="#ffffff"><div class=middle><b>&nbsp;&nbsp;Browse OpenMS Files</b></div></td>
@@ -977,7 +977,7 @@ if($_SESSION['AUTH']->Insert){
   <input type="button" value='Close' onClick="window.close()";>
   <br>
   </DIV>
-  // OPENMS END
+  <!-- OPENMS END -->
 
   </form>
 <?php 
