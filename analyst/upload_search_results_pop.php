@@ -41,8 +41,8 @@ $isUploaded_Mascot = 0;
 $isUploaded_GPM = 0;
 $isUploaded_Sequest = 0;
 $isUploaded_MSGF = 0;
-
 $isUploaded_TPP = 0;
+$isUploaded_OpenMS = 0;
 
 $pepex = 0;
 $pepex_dot = 0; 
@@ -54,18 +54,21 @@ $isOwner_GPM = 0;
 $isOwner_Sequest = 0;
 $isOwner_TPP = 0;
 $isOwner_MSGF = 0;
+$isOwner_OpenMS = 0;
 
 $isWrongFormat_Mascot = 0;
 $isWrongFormat_GPM = 0;
 $isWrongFormat_Sequest = 0;
 $isWrongFormat_TPP = 0;
 $isWrongFormat_MSGF = 0;
+$isWrongFormat_OpenMS = 0;
 
 $isRemoved_Mascot = 0;
 $isRemoved_GPM = 0;
 $isRemoved_Sequest = 0;
 $isRemoved_TPP = 0;
 $isRemoved_MSGF = 0;
+$isRemoved_OpenMS = 0;
 
 $hitsDB = '';
 $proteinDB = '';
@@ -76,29 +79,35 @@ $uploaded_dat_mascot = '';
 $uploaded_dat_GPM = '';
 $uploaded_dat_Sequest = '';
 $uploaded_dat_MSGF = '';
+$uploaded_dat_OpenMS = '';
 
 $uploaded_log_mascot = '';
 $uploaded_log_GPM = '';
 $uploaded_log_Sequest = '';
 $uploaded_log_MSGF = '';
+$uploaded_log_OpenMS = '';
 
 $uploaded_tmp_mascot = '';
 $uploaded_tmp_GPM = '';
 $uploaded_tmp_Sequest = '';
 $uploaded_tmp_MSGF = '';
+$uploaded_tmp_OpenMS = '';
 
 
 $file_Mascot = '';
 $file_GPM = '';
-
 $file_tppPep = '';
 $file_tppProt = '';
+$file_OpenMS_idXML = '';
+$file_OpenMS_protQuant = '';
+$file_OpenMS_pepQuant = '';
+
 $userID_Mascot = '';
 $userID_GPM = '';
-
-
 $userID_tppPep = '';
 $userID_tppProt = '';
+$userID_OpenMS = '';
+
 $pepTPPfileName = '';
 
 $_mudpit = 1;
@@ -124,6 +133,7 @@ include("msManager/autoSave/auto_save_mascot_shell_fun.inc.php");
 include("msManager/autoSave/auto_save_gpm_shell_fun.inc.php");
 include("msManager/autoSave/auto_save_MSGF_shell_fun.inc.php");
 include("msManager/autoSave/auto_save_sequest_shell_fun.inc.php");
+//include("msManager/autoSave/auto_save_OpenMS_shell_fun.inc.php"); // TODO
 require_once("msManager/is_dir_file.inc.php");
 
 ini_set('memory_limit','-1');
@@ -472,10 +482,54 @@ if($_SESSION['AUTH']->Insert and $theAction == 'uploaded' and !$err_msg){
     }
   }
 
-  /* TODO
+    /* OPENMS START */
 	if($uploadType == "OpenMS"){
+		if(_is_file($_FILES['frm_OpenMS_idXML']['tmp_name'])){
+			$tmp_idXML_filename = $_FILES['frm_OpenMS_idXML']['name'];
+			$err_msg = check_file_type($_FILES['frm_OpenMS_idXML'], 'OpenMS_idXML');
 
-	}*/
+			if($err_msg){
+				$isWrongFormat_OpenMS = 1;
+				//echo $err_msg;
+			}else{
+				$err_msg = save_search_result_file($_FILES['frm_OpenMS_idXML'], $upload_to.'OpenMS/', $passed_Band_ID, 'OpenMS_idXML');
+				if(!$err_msg){
+					$isUploaded_OpenMS = 1;
+					$isOwner_OpenMS = 1;
+                    //hits_searchEngines('update', $AccessProjectID, $HITSDB, 'OpenMS_Uploaded');
+				}
+			}
+		}
+
+		if(!$err_msg and _is_file($_FILES['frm_OpenMS_protQuant']['tmp_name'])){
+			$err_msg = check_file_type($_FILES['frm_OpenMS_protQuant'], 'OpenMS_protQuant');
+			if($err_msg){
+							$isWrongFormat_OpenMS = 1;
+				echo $err_msg;
+			}else{
+				$err_msg = save_search_result_file($_FILES['frm_OpenMS_protQuant'], $upload_to.'OpenMS/', $passed_Band_ID, 'OpenMS_protQuant');
+				if(!$err_msg){
+				    $isUploaded_OpenMS = 1;
+				    $isOwner_OpenMS = 1;
+				}
+			}
+		}
+
+        if(!$err_msg and _is_file($_FILES['frm_OpenMS_pepQuant']['tmp_name'])){
+            $err_msg = check_file_type($_FILES['frm_OpenMS_pepQuant'], 'OpenMS_pepQuant');
+            if($err_msg){
+                $isWrongFormat_OpenMS = 1;
+                echo $err_msg;
+            }else{
+                $err_msg = save_search_result_file($_FILES['frm_OpenMS_pepQuant'], $upload_to.'OpenMS/', $passed_Band_ID, 'OpenMS_pepQuant');
+                if(!$err_msg){
+                    $isUploaded_OpenMS = 1;
+                    $isOwner_OpenMS = 1;
+                }
+            }
+        }
+	}
+	/* OPENMS END */
 }
 
 $SQL = "SELECT SearchEngine, UploadedBy,File,Date FROM UploadSearchResults Where BandID='$passed_Band_ID' order by Date";
@@ -531,16 +585,31 @@ foreach($uploaded_arr as $uploaded_record){
       if($AccessUserID == $uploaded_record['UploadedBy']){
         $isOwner_MSGF = 1;
       }
-    }else if($searchEngine == 'OpenMS'){
-        // TODO
-	    /*$isUploaded_MSGF = 1;
-	    $file_MSGF = $uploaded_record['File'];
-	    $date_MSGF = $uploaded_record['Date'];
-	    $userID_MSGF = $uploaded_record['UploadedBy'];
+    }else if($searchEngine == 'OpenMS_idXML'){ /* OPENMS START */
+	    $isUploaded_OpenMS = 1;
+	    $file_OpenMS_idXML = $uploaded_record['File'];
+	    $date_OpenMS_idXML = $uploaded_record['Date'];
+	    $userID_OpenMS = $uploaded_record['UploadedBy'];
 	    if($AccessUserID == $uploaded_record['UploadedBy']){
-		    $isOwner_MSGF = 1;
-	    }*/
-    }
+			    $isOwner_OpenMS = 1;
+	    }
+    } else if($searchEngine == 'OpenMS_protQuant'){
+	    $isUploaded_OpenMS = 1;
+	    $file_OpenMS_protQuant = $uploaded_record['File'];
+	    $date_OpenMS_protQuant = $uploaded_record['Date'];
+	    $userID_OpenMS = $uploaded_record['UploadedBy'];
+	    if($AccessUserID == $uploaded_record['UploadedBy']){
+		    $isOwner_OpenMS = 1;
+	    }
+    } else if($searchEngine == 'OpenMS_pepQuant'){
+	    $isUploaded_OpenMS = 1;
+	    $file_OpenMS_pepQuant = $uploaded_record['File'];
+	    $date_OpenMS_pepQuant = $uploaded_record['Date'];
+	    $userID_OpenMS = $uploaded_record['UploadedBy'];
+	    if($AccessUserID == $uploaded_record['UploadedBy']){
+			    $isOwner_OpenMS = 1;
+	    }
+    } /* OPENMS END */
   }
 }
 
@@ -596,17 +665,18 @@ if($theAction == 'remove' ){
     $isUploaded_MSGF = 0;
     $isRemoved_MSGF = 1;
   }
-  // TODO
-	/*if($removeType == "OpenMS" and $isOwner_OpenMS){
-		//remove data from hits, peptide and UploadSearchResults table
-		$uploaded_txt_name = preg_replace('/xml/','txt',$file_MSGF);
-		if(_is_file($upload_to.'MSGF/'.$file_MSGF)) unlink($upload_to.'MSGF/'.$file_MSGF);
-		if(_is_file($upload_to.'MSGF/'.$uploaded_txt_name))unlink($upload_to.'MSGF/'.$uploaded_txt_name);
-		remove_hits($passed_Band_ID,$removeType,$file_MSGF);
-		$msg = "MSGF file has been removed";
-		$isUploaded_MSGF = 0;
-		$isRemoved_MSGF = 1;
-	}*/
+  // OPENMS START
+  if($removeType == "OpenMS" and $isOwner_OpenMS){
+		if(_is_file($upload_to.'OpenMS/'.$file_OpenMS_idXML)) unlink($upload_to.'OpenMS/'.$file_OpenMS_idXML);
+		if(_is_file($upload_to.'OpenMS/'.$file_OpenMS_protQuant))unlink($upload_to.'OpenMS/'.$file_OpenMS_protQuant);
+	    if(_is_file($upload_to.'OpenMS/'.$file_OpenMS_pepQuant))unlink($upload_to.'OpenMS/'.$file_OpenMS_pepQuant);
+		// TODO?
+	    remove_hits($passed_Band_ID,$removeType,$file_OpenMS_idXML);
+		$msg = "OpenMS file has been removed";
+		$isUploaded_OpenMS = 0;
+		$isRemoved_OpenMS = 1;
+  }
+  // OPENMS END
 }
 ?>
 <script language='javascript'>
@@ -877,41 +947,37 @@ if($_SESSION['AUTH']->Insert){
   </DIV>
 
 
-  //TODO
+  // OPENMS START
   <DIV ID='upload_openms_div' STYLE="Display:<?php echo ($isWrongFormat_TPP=='1')?"block":"none"?>; border: #a4a4a4 solid 1px; width: <?php echo $divSize;?>">
-      <!--<table border=1 cellspacing="2" cellpadding="0" width=100%>
+      <table border=1 cellspacing="2" cellpadding="0" width=100%>
       <tr>
-          <td colspan=3 bgcolor="#ffffff"><div class=middle><b>&nbsp;&nbsp;Browse TPP Files</b></div></td>
+          <td colspan=3 bgcolor="#ffffff"><div class=middle><b>&nbsp;&nbsp;Browse OpenMS Files</b></div></td>
       </tr>
       <tr>
-          <td bgcolor = #e3e3e3 nowrap><b><font face="Arial" size=2pt> TPP ProteinProphet :  </font></b></td>
-          <td ><input type=file size=45 name=frm_tppProt_xml></td>
-          <td nowrap><font face="Arial" size=2pt color="#0000ff" > select .xml file</font></td>
+          <td bgcolor = #e3e3e3 nowrap><b><font face="Arial" size=2pt> OpenMS idXML :  </font></b></td>
+          <td ><input type=file size=45 name=frm_OpenMS_idXML></td>
+          <td nowrap><font face="Arial" size=2pt color="#0000ff" > select .idXML file</font></td>
       </tr>
       <tr>
-          <td bgcolor = #e3e3e3 nowrap><b><font face="Arial" size=2pt> TPP PeptideProphet : </font></b></td>
-          <td ><input type=file size=45 name=frm_tppPep_xml></td>
-          <td align="left" ><font face="Arial" size=2pt color="#0000ff"> select .xml file</font></td>
+          <td bgcolor = #e3e3e3 nowrap><b><font face="Arial" size=2pt> OpenMS protein quant : </font></b></td>
+          <td ><input type=file size=45 name=frm_OpenMS_protQuant></td>
+          <td align="left" ><font face="Arial" size=2pt color="#0000ff"> select .csv file</font></td>
+      </tr>
+      <tr>
+          <td bgcolor = #e3e3e3 nowrap><b><font face="Arial" size=2pt> OpenMS peptide quant : </font></b></td>
+          <td ><input type=file size=45 name=frm_OpenMS_pepQuant></td>
+          <td align="left" ><font face="Arial" size=2pt color="#0000ff"> select .csv file</font></td>
       </tr>
       <tr>
           <td colspan=3 ><center><div class=maintext>Upload max file size:&nbsp;<font color='red'><?php echo $UPLOAD_MAX_FILESIZE?></font>&nbsp;&nbsp;Post max size:&nbsp;<font color='red'><?php echo $POST_MAX_SIZE?></font></div></center></td>
       </tr>
   </table>
   <br>
-  <input type=button value='Submit' onClick="submitform('TPP')">
+  <input type=button value='Submit' onClick="submitform('OpenMS')">
   <input type="button" value='Close' onClick="window.close()";>
-  <br>-->
+  <br>
   </DIV>
-
-
-
-
-
-
-
-
-
-
+  // OPENMS END
 
   </form>
 <?php 
@@ -1017,7 +1083,7 @@ if($isUploaded_TPP or $isUploaded_Mascot or $isUploaded_GPM or $isUploaded_Seque
       </td>
     </tr>
 <?php   }
-    // TODO
+    // OPENMS START
 	if($isUploaded_OpenMS){
 		$theUser = $PROHITSDB->fetch("select Fname, Lname from User where ID='".$userID_OpenMS."'");
 		?>
@@ -1029,12 +1095,18 @@ if($isUploaded_TPP or $isUploaded_Mascot or $isUploaded_GPM or $isUploaded_Seque
           </td>
           <td bgcolor=#e3e3e3 nowrap><div class=maintext><?php echo $theUser['Fname'] ." " . $theUser['Lname'];?></div></td>
           <td bgcolor=#e3e3e3 nowrap><div class=maintext><?php echo $date_OpenMS;?></div></td>
-          <td bgcolor=#e3e3e3 nowrap><div class=maintext><?php echo $file_OpenMS;?>
-                  <a  title='Download uploaded file' href="javascript: download_uploaded_file('OpenMS/<?php echo $file_OpenMS;?>')"> <img src=./images/icon_download.gif border=0></a>
+          <td bgcolor=#e3e3e3 nowrap>
+              <div class=maintext>
+                <?php echo $file_tppProt;?><a  title='Download uploaded file' href="javascript: download_uploaded_file('OpenMS/<?php echo $file_OpenMS_idXML;?>')"> <img src=./images/icon_download.gif border=0></a>
+                <br>
+                <?php echo $file_tppPep;?><a  title='Download uploaded file' href="javascript: download_uploaded_file('OpenMS/<?php echo $file_OpenMS_protQuant;?>')"> <img src=./images/icon_download.gif border=0></a>
+                <br>
+                <?php echo $file_tppPep;?><a  title='Download uploaded file' href="javascript: download_uploaded_file('OpenMS/<?php echo $file_OpenMS_pepQuant;?>')"> <img src=./images/icon_download.gif border=0></a>
               </div>
           </td>
       </tr>
 	<?php   }
+	// OPENMS END
 }?>
  </table>
 </center>
@@ -1097,6 +1169,30 @@ function check_file_type($file,$file_type){
       $rt = "The uploaded $file_type file is not correct format. The file extension should be csv.";
     }  
   }
+  // OPENMS START
+
+  else if($file_type == 'OpenMS_protQuant'  or $file_type == 'OpenMS_pepQuant'){
+	  if(!preg_match("/.csv|.tsv$/i", $file['name'])){
+		  $rt = "The uploaded $file_type file is not correct format. The file extension should be csv.";
+	  }
+  }
+
+  else if($file_type == 'OpenMS_idXML'){
+	  if ($fp = @fopen($file['tmp_name'], "r")){
+		  $i=0;
+		  while ($data = fgets($fp, 4096)) {
+              if(strpos($data, '<?xml-stylesheet type="text/xsl" href="https://www.openms.de/xml-stylesheet/IdXML.xsl" ?>') === 0){
+                  break;
+              }
+			  $i++;
+			  if($i>20){
+				  $rt = "The uploaded $file_type file is not correct format.";
+				  break;
+			  }
+		  }
+	  }
+  }
+  // OPENMS END
   return $rt;
 }
 
@@ -1143,6 +1239,18 @@ function save_search_result_file($file_arr, $upload_to, $frm_sample_ID, $Type, $
       $exportingParameterStr = '';
       $ok = save_MSGF_results($tmpFileFullName, $frm_sample_ID, 1);
     }
+    // OPENMS START
+    // TODO
+    elseif($Type == 'OpenMS_idXML'){
+      // the functions are in auto_save_openms_shell_fun.inc.php
+      $ok = parse_OpenMS_idXML($frm_sample_ID, $tmpFileFullName, $uploaded_file_name, 'uploaded');
+      //$pepTPPfileName = $uploaded_file_name;
+    }elseif($Type == 'OpenMS_protQuant'){
+      $ok = parse_OpenMS_protQuant($frm_sample_ID, $tmpFileFullName, $uploaded_file_name, 'uploaded');
+    }elseif($Type == 'OpenMS_pepQuant'){
+      $ok = parse_OpenMS_pepQuant($frm_sample_ID, $tmpFileFullName, $uploaded_file_name, 'uploaded');
+    }
+    // OPENMS END
   }
   if(!$ok){
     $error_msg = "There is error when parsing file (sample ID:$frm_sample_ID) " .$uploaded_file_name. ". read log file for detail.";
@@ -1255,11 +1363,10 @@ function remove_hits($passed_Band_ID,$SearchEngine,$file){
       $hitsDB->execute("delete from SequestPeptide where HitID='$hit_ID'");
       $hitsDB->execute("delete from HitNote where HitID='$hit_ID'");
     }  
-  }else{
-    if($SearchEngine == 'tppPep'){
+  }elseif($SearchEngine == 'tppPep'){
       $SQL = "DELETE FROM TppPeptide where BandID='". $passed_Band_ID ."' and XmlFile='".$file."'";
       $hitsDB->execute($SQL);
-    }else if($SearchEngine == 'tppProt'){
+  }else if($SearchEngine == 'tppProt'){
       $SQL = "SELECT ID FROM TppProtein where BandID='". $passed_Band_ID ."' and XmlFile='".$file."'";
       $ID_Arr = $hitsDB->fetchAll($SQL);
       foreach($ID_Arr as $tmpRd){
@@ -1268,8 +1375,30 @@ function remove_hits($passed_Band_ID,$SearchEngine,$file){
       }
       $SQL = "DELETE FROM TppProtein where BandID='". $passed_Band_ID ."' and XmlFile='".$file."'";
       $hitsDB->execute($SQL);
-    }
   }
+  // OPENMS START
+  elseif($SearchEngine == 'OpenMS_idXML') {
+	  $SQL = "select ID from Hits where BandID='$passed_Band_ID' and SearchEngine='OpenMSUploaded'";
+	  $new_hits = $hitsDB->fetchAll($SQL);
+	  for($i = 0; $i < count($new_hits); $i++){
+		  $hit_ID = $new_hits[$i]['ID'];
+		  $hitsDB->execute("delete from Hits where ID='$hit_ID'");
+		  $hitsDB->execute("delete from Peptide where HitID='$hit_ID'");
+		  $hitsDB->execute("delete from HitNote where HitID='$hit_ID'");
+	  }
+  } elseif($SearchEngine == 'OpenMS_protQuant') {
+	  $SQL = "update Hits set Intensity_log = NULL where BandID='$passed_Band_ID' and SearchEngine='OpenMSUploaded'";
+	  $hitsDB->execute($SQL);
+  } elseif($SearchEngine == 'OpenMS_pepQuant') {
+	  $SQL = "select ID from Hits where BandID='$passed_Band_ID' and SearchEngine='OpenMSUploaded'";
+	  $new_hits = $hitsDB->fetchAll($SQL);
+	  for($i = 0; $i < count($new_hits); $i++){
+		  $hit_ID = $new_hits[$i]['ID'];
+		  $hitsDB->execute("update Peptide set Intensity_log = NULL where ID='$hit_ID'");
+	  }
+  }
+  // OPENMS END
+
   $Log = new Log($hitsDB->link);
   $Desc = "BandID: $passed_Band_ID, file $file";
   $Log->insert($AccessUserID,'UploadSearchResults',$passed_Band_ID,'delete',$Desc,$AccessProjectID);
